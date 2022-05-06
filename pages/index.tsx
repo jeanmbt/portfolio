@@ -7,6 +7,7 @@ import { AboutMe } from "../components/sections/aboutme";
 import { Theme } from "../styles/theme/theme";
 import { ProjectCard } from "../components/projectCard";
 import { Projects } from "../components/sections/projects";
+import { Contact } from "../components/sections/contact";
 
 export const Section = styled(Box)(({}) => ({
   display: "flex",
@@ -53,7 +54,7 @@ const Home: NextPage = () => {
 
             {/* CONTACT  */}
             <Section>
-              <Typography variant="h4">Contact</Typography>
+              <Contact />
             </Section>
             {/*  */}
           </Box>
