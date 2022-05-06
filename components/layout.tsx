@@ -30,10 +30,10 @@ const Header = () => {
   return (
     <Toolbar
       style={{
-        backgroundColor: theme.palette.background.default,
+        backgroundColor: theme.palette.secondary.light,
         minHeight: "1.25em",
         height: "2.25em",
-        borderBottom: `0.2em solid ${theme.palette.primary.light}`,
+        borderBottom: `0.2em solid ${theme.palette.secondary.dark}`,
       }}
     >
       <Box

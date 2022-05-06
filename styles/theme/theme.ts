@@ -1,5 +1,8 @@
 import { createTheme } from '@mui/material/styles';
 
+//sort theme function
+// if themeToggle: dark....
+
 // TODO: light theme
 export const theme = createTheme({
   palette: {

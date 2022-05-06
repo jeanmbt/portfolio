@@ -14,22 +14,50 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        {/* TODO: Abstract into a component */}
         <Container sx={{ paddingY: 2 }}>
+          {/* Main Document */}
           <Box
             component={Paper}
             sx={{
               display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
+              justifyContent: "space-around",
               alignItems: "center",
               margin: "auto",
-
-              height: "80vh",
             }}
-            paddingY={5}
+            paddingY={10}
           >
-            <Typography
+            {/* TODO: Abstract into a component */}
+            {/* About */}
+            {/* Profile links */}
+            <Box sx={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
+              <Box>Photo</Box>
+              Jean Michel Battirola
+              <Box>Links....</Box>
+            </Box>
+            {/* about text */}
+            <Box
+              sx={{ display: "flex", alignItems: "center", flexDirection: "column", width: "50%" }}
+            >
+              <Typography variant="h5" marginBottom={3}>
+                About me
+              </Typography>
+              <Box>
+                {" "}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis, enim at
+                tincidunt finibus, neque orci elementum metus, eget lacinia ipsum tellus eu libero.
+                Quisque tortor velit, dignissim ut odio non, placerat tempus arcu. Pellentesque
+                cursus, risus sed dictum gravida, tellus elit tincidunt urna, vitae ullamcorper nisl
+                justo id lacus. Fusce scelerisque elit id arcu posuere, in hendrerit felis
+                consequat. Praesent orci turpis, gravida eget libero eu, congue ultrices lorem.
+                Etiam vel feugiat velit, id porttitor risus. Mauris iaculis erat eu accumsan dictum.
+                Phasellus ut suscipit est. Curabitur quis dolor dignissim, auctor mi at, facilisis
+                nunc. Duis imperdiet feugiat leo eu iaculis. Quisque a diam eu dolor auctor
+                sollicitudin. Nunc fermentum efficitur tincidunt. Proin et sollicitudin quam. Donec
+                condimentum lorem cursus imperdiet sollicitudin. Mauris sapien quam, tincidunt
+                ultrices quam ut, scelerisque dignissim lorem. Pellentesque id cursus elit.
+              </Box>
+            </Box>
+            {/* <Typography
               sx={{ marginBottom: 5, textAlign: "center", fontSize: [50, 30] }}
               variant="h5"
               gutterBottom
@@ -42,7 +70,7 @@ const Home: NextPage = () => {
               href="/people"
             >
               See all People
-            </Button>
+            </Button> */}
           </Box>
         </Container>
       </main>
