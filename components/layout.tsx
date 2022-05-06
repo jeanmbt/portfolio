@@ -6,19 +6,7 @@ import logo from "../public/logo.png";
 import styles from "../styles/Home.module.css";
 import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 import { ReactChild, ReactChildren, ReactNode } from "react";
-import { theme } from "../styles/theme/theme";
-
-interface Theme {
-  children?: ReactJSXElement | string;
-  palette: {
-    mode: string;
-    primary: { main: string; light: string; dark: string };
-    secondary: { main: string; light: string; dark: string };
-    background: { default: string };
-    text: { primary: string; secondary: string };
-  };
-  theme?: ThemeOptions | any;
-}
+import { theme, Theme } from "../styles/theme/theme";
 
 interface Layout {
   theme: Theme;

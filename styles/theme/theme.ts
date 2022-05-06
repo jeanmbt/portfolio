@@ -1,7 +1,23 @@
-import { createTheme } from '@mui/material/styles';
+import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
+import { createTheme, ThemeOptions } from '@mui/material/styles';
+
+
+export interface Theme {
+  children?: ReactJSXElement | string;
+  palette: {
+    mode: string;
+    primary: { main: string; light: string; dark: string };
+    secondary: { main: string; light: string; dark: string };
+    background: { default: string };
+    text: { primary: string; secondary: string };
+  };
+  theme?: ThemeOptions | any;
+}
+
 
 //sort theme function
 // if themeToggle: dark....
+
 
 // TODO: light theme
 export const theme = createTheme({
@@ -14,7 +30,6 @@ export const theme = createTheme({
   },
 });
 
-// TODO: dark theme
 export const darkTheme = createTheme({
   palette: {
     mode: "dark",
