@@ -12,13 +12,14 @@ import { Contact } from "../components/sections/contact";
 export const Section = styled(Box)(({}) => ({
   display: "flex",
   justifyContent: "space-around",
-  alignItems: "center",
-  marginBottom: 5,
+  alignItems: "flex-start",
+  marginBottom: "5em",
 }));
 
 export const Stacked = styled(Section)(({}) => ({
   flexDirection: "column",
   margin: 8,
+  alignItems: "center",
 }));
 
 const Home: NextPage = () => {
@@ -42,7 +43,6 @@ const Home: NextPage = () => {
           >
             {/*  */}
             {/* ABOUT */}
-            {/* TODO: Abstract into a component */}
             <Section>
               <AboutMe />
             </Section>

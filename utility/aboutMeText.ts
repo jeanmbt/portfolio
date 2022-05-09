@@ -1,12 +1,7 @@
-export const aboutMeText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis, enim at tincidunt
-finibus, neque orci elementum metus, eget lacinia ipsum tellus eu libero. Quisque tortor
-velit, dignissim ut odio non, placerat tempus arcu. Pellentesque cursus, risus sed dictum
-gravida, tellus elit tincidunt urna, vitae ullamcorper nisl justo id lacus. Fusce
-scelerisque elit id arcu posuere, in hendrerit felis consequat. Praesent orci turpis,
-gravida eget libero eu, congue ultrices lorem. Etiam vel feugiat velit, id porttitor
-risus. Mauris iaculis erat eu accumsan dictum. Phasellus ut suscipit est. Curabitur quis
-dolor dignissim, auctor mi at, facilisis nunc. Duis imperdiet feugiat leo eu iaculis.
-Quisque a diam eu dolor auctor sollicitudin. Nunc fermentum efficitur tincidunt. Proin et
-sollicitudin quam. Donec condimentum lorem cursus imperdiet sollicitudin. Mauris sapien
-quam, tincidunt ultrices quam ut, scelerisque dignissim lorem. Pellentesque id cursus
-elit.`
+export const aboutMeText = `I am Jean Michel Battirola, a creative soul and a change embracer. I moved to Germany in September 2017. Leaving a stable position on the market in as a Beauty Artist in my home country looking for more opportunities to grow, learn and get in touch with people from different backgrounds, I chose Berlin as the starting point of this part of my journey.
+
+Having a enormous Interest in Technology and curiosity about how people use it in their lives, I saw Web-Development as a Waypoint to learn more about Programming and Technology. My former experiences prepared me for the challenges I face daily when developing Web Applications like trouble shooting and user experience, so there's no challenge big enough for me. I intrinsically feel the necessity to learn, create, build and share and I find Programming is the perfect medium for that. Since the end of my Bootcamp experience in March 2021, using the Full-Stack knowledge I gathered so far I already developed real-life use projects of my own authorship.
+
+Part of my daily routine is to research different topics to aggregate knowledge and improve my interpersonal and technical skills set. I am creative, proactive and I naturally think out of the box to come up with clever solutions for problems I face. I find one of the most valuable experiences is to know more about people's stories, who they are, what they do and build healthy relationships, which makes me a excellent team worker. I'm eager to learn and develop myself therefore I'm constantly practicing exertion. I like to put extra energy to deliver best possible and exceed expectations with everything I do.
+
+I'm looking forward to dive deeper every day in Programming and Development and to learn more from experienced professionals. My priority is to have a healthy work routine so that I can be the most productive and use my time and brain energy on what really matters. On that account I'm prepared for and mostly interested in working in a Remote Setting.`

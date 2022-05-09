@@ -90,7 +90,7 @@ export default function Layout({ children, theme }: Layout) {
           by Jean Michel Battirola
         </a>
         <Typography margin={1} fontSize={12}>
-          Using: NextJs + Typescript, Prisma, Apollo, MUI, Emotion, graphQL
+          {/* Using: NextJs + Typescript, Prisma, Apollo, MUI, Emotion, graphQL */}
         </Typography>
       </footer>
     </>

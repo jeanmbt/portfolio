@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { aboutMeText } from "../../utility/aboutMeText";
 import profile from "../../public/profile.png";
+import Link from "next/link";
 
 export const AboutMe = () => {
   return (
@@ -18,13 +19,22 @@ export const AboutMe = () => {
             backgroundSize: "cover",
           }}
         ></Box>
-        Jean Michel Battirola
-        <Box>
-          <Box>GH</Box>
-          <Box>Linkedin</Box>
-
-          <Box>Phone</Box>
-          <Box>Email</Box>
+        <Typography variant="h6">Jean Michel Battirola</Typography>
+        <Typography variant="subtitle2">Full-Stack Developer</Typography>
+        <Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", margin: "1em" }}>
+          <Box>
+            <Link href="github.com/jeanmbt">Github</Link>
+          </Box>
+          <Box>
+            <Link href="linkedin.com/in/jeanmbt">LinkedIn</Link>
+          </Box>
+          <Box>
+            <Box>+49 1522 4945 601</Box>
+          </Box>
+          <Box>
+            <Box>jeanbattirola@gmail.com</Box>
+          </Box>
+          <Box>CV</Box>
         </Box>
       </Box>
       <Box
@@ -38,7 +48,11 @@ export const AboutMe = () => {
         <Typography variant="h5" marginBottom={3}>
           About me
         </Typography>
-        <Box>{aboutMeText}</Box>
+        <Box>
+          <Typography sx={{ whiteSpace: "break-spaces" }} variant="body2">
+            {aboutMeText}
+          </Typography>
+        </Box>
       </Box>
     </>
   );
