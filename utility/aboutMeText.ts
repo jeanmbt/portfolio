@@ -6,4 +6,5 @@ After using a bunch of idle time I had available to study programming by myself 
 My approach working in teams is the same as my approach to people anywhere. For me it is important that the work enviroment is respectful, tolerant and open. I believe good communication is essential in such a place. 
 
 Currently I am based in Berlin, Germany.
+Feel free to reach me if you're  interested in getting to know me better.
 `

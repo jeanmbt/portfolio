@@ -27,7 +27,7 @@ export  const projectsData: Project[] = [
     title: "artcollabs",
     image:  `${artcollabs.src}`,
     techs: ["rails", "sass", "postgreSQL", "javascript"],
-    description: "Full-stack application with authentication, authorization with multiple dynamic pages for artists to interact and collaborate",
+    description: "Full-stack application with authentication, authorization, dashboards and multiple dynamic pages for artists to interact to each other while collaborating for art projects.",
     repoUrl: "https://github.com/jeanmbt/artcollabs_local",
     url: "https://art-collabs.herokuapp.com/"
   },
@@ -43,7 +43,7 @@ export  const projectsData: Project[] = [
     title: "myly",
     image:  `${myly.src}`,
     techs: ["rails", "sass", "postgreSQL", "javascript"],
-    description: "Full-stack application for musicians to store, rate and share music lyrics.",
+    description: "Full-stack application for musicians to store, rate and share music lyrics. With authentication, profile page",
     repoUrl: "https://github.com/jeanmbt/myly",
     url: "https://peopledotcom.vercel.app/"
   },
