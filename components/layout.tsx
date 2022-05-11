@@ -1,29 +1,42 @@
-import { Button, createTheme, ThemedProps, ThemeOptions, Toolbar, Typography } from "@mui/material";
-import { deepPurple, purple } from "@mui/material/colors";
-import { Box } from "@mui/system";
+/* eslint-disable react/no-unescaped-entities */
+import {
+  Box,
+  Button,
+  createTheme,
+  ThemedProps,
+  ThemeOptions,
+  Toolbar,
+  Typography,
+  Divider,
+} from "@mui/material";
 import Link from "next/link";
-import logo from "../public/logo.png";
+
 import styles from "../styles/Home.module.css";
-import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
-import { ReactChild, ReactChildren, ReactNode } from "react";
+
+import { ReactNode } from "react";
 import { theme, Theme } from "../styles/theme/theme";
+import { Stacked } from "../pages";
 
 interface Layout {
   theme: Theme;
   children: ReactNode;
 }
 
+// TODO: abstract to it's own file
 const Header = () => {
   console.log(theme);
   return (
     <Toolbar
-      style={{
-        backgroundColor: theme.palette.secondary.light,
-        minHeight: "1.25em",
+      sx={{
+        bgcolor: theme.palette.secondary.dark,
+        minHeight: "1.50em !important",
         height: "2.25em",
-        borderBottom: `0.2em solid ${theme.palette.secondary.dark}`,
+
+        color: theme.palette.background.paper,
       }}
     >
+      {/* TODO: ADD switch from  https://mui.com/material-ui/react-switch/ to toggle themes*/}
+      {/* TODO: ADD languange options DE/EN/PT*/}
       <Box
         sx={{
           display: "flex",
@@ -32,39 +45,23 @@ const Header = () => {
           alignItems: "center",
           flexWrap: "wrap",
           margin: 0,
+          color: theme.palette.text.secondary,
         }}
       >
         <Link href="/" passHref>
-          {/* <Box
-            style={{
-              height: "2em",
-              width: "2em",
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-              // backgroundImage: `url(${logo.src})`,
-              color: theme.palette.primary.main,
-              cursor: "pointer",
-              zIndex: 1,
-            }}
-          ></Box> */}
-          Jean Michel Battirola
+          Jean Michel Battirola - Web developer
         </Link>
+        <Button href="/art" variant="text" sx={{ color: theme.palette.text.secondary }}>
+          Here for my art?
+        </Button>
         {/* // TODO: make responsive */}
-        {/* <Button
-          sx={{ margin: "0.5em 0", float: "right", backgroundColor: "white" }}
-          variant="outlined"
-          href={`people/new`}
-        >
-          Add Person
-        </Button> */}
-        Menu
       </Box>
     </Toolbar>
   );
 };
 
 export default function Layout({ children, theme }: Layout) {
-  // todo if theme... theme
+  // TODO: if theme... theme
   // <Header theme={theme} />
   return (
     <>
@@ -73,7 +70,7 @@ export default function Layout({ children, theme }: Layout) {
         style={{
           height: "max-content",
           minHeight: "80vh",
-          backgroundColor: theme.palette.primary.light,
+          backgroundColor: theme.palette.background.paper,
         }}
       >
         {children}
@@ -82,16 +79,23 @@ export default function Layout({ children, theme }: Layout) {
         className={styles.footer}
         style={{
           backgroundColor: theme.palette.secondary.light,
-          color: theme.palette.text.primary,
           borderTop: `0.2em solid ${theme.palette.secondary.dark}`,
         }}
       >
-        <a href="https://github.com/jeanmbt" target="_blank" rel="noopener noreferrer">
-          by Jean Michel Battirola
-        </a>
-        <Typography margin={1} fontSize={12}>
-          {/* Using: NextJs + Typescript, Prisma, Apollo, MUI, Emotion, graphQL */}
-        </Typography>
+        <Box></Box>
+        <Stacked sx={{ color: theme.palette.text.secondary }}>
+          <Link href="https://github.com/jeanmbt/portfolio">
+            <a target="_blank">
+              <Typography sx={{ textDecoration: "underline" }}>
+                check this project's repository!
+              </Typography>
+            </a>
+          </Link>
+
+          <hr />
+          <Typography>dev@jeanbattirola.com</Typography>
+          <Typography variant="subtitle2">+49 1522 4945 601</Typography>
+        </Stacked>
       </footer>
     </>
   );
