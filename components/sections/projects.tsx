@@ -6,8 +6,8 @@ import { projectsData } from "../../utility/projectsData";
 export const Projects = () => {
   return (
     <>
-      <Typography variant="h4">Projects</Typography>
       <Stacked>
+        <Typography variant="h4">Projects</Typography>
         {projectsData.map((project) => {
           return <ProjectCard key={project.title} project={project} />;
         })}

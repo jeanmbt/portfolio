@@ -48,7 +48,7 @@ const Home: NextPage = () => {
             </Section>
 
             {/* PROJECTS  */}
-            <Section sx={{ flexDirection: "column", alignItems: "center" }}>
+            <Section>
               <Projects />
             </Section>
 

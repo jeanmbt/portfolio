@@ -16,10 +16,10 @@ export interface Project {
 
 export  const projectsData: Project[] = [
   {
-    title: "PeopleDotCom",
+    title: "PeopleDotCom (CHANGE PICTURE)",
     img: `${peopleDotCom.src}`,
     techs: ["nextjs", "react", "typescript", "graphql", "mui", "prisma", "apollo", "javascript"],
-    description: ""
+    description: "NextJs application using Apollo, Prisma, GraphQL for the backend and data fetching. With lazy load, sorting"
   },
 
   {

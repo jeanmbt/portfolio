@@ -1,8 +1,9 @@
 import { Box, Typography, Paper, Button } from "@mui/material";
 import Image from "next/image";
 import { Stacked } from "../pages";
-import { Project } from "../types/projects";
+
 import whichhours from "../public/projectImg/whichhours.gif";
+import { Project } from "../utility/projectsData";
 interface ProjectCard {
   project: Project;
 }
@@ -11,6 +12,9 @@ export const ProjectCard = ({ project }: ProjectCard) => {
   const img = project.img;
   return (
     <>
+      <Typography variant="h6" marginTop={5}>
+        {project.title}
+      </Typography>
       <Stacked component={Paper} sx={{ margin: "2em" }}>
         <Box
           margin="2em"
@@ -20,12 +24,10 @@ export const ProjectCard = ({ project }: ProjectCard) => {
             backgroundImage: `url(${project.img})`,
             backgroundSize: "cover",
           }}
-        >
-          {/* <Image layout="fill" alt={`${project.title} screenshot`} src={}></Image> */}
-        </Box>
-        <Typography variant="h6">{project.title}</Typography>
+        />
+
         <Box sx={{ margin: 3, display: "flex", justifyContent: "space-between" }}>
-          {project.techs.map((tech) => {
+          {project.techs.map((tech: any) => {
             return (
               <Button sx={{ cursor: "default" }} key={`${tech}${project}`}>
                 {tech}
