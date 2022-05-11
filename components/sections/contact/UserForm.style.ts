@@ -1,7 +1,7 @@
+// TODO: Complete this file's migration to this project
 
 // import { colors, device } from "../../styles/global";
 // import { IFormWrapper, IStyledInput } from "../../types/Form.type";
-
 import styled from "@emotion/styled";
 
 export  const device = {

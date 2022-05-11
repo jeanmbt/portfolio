@@ -2,8 +2,8 @@ import { useFormik, FormikHelpers } from "formik";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
-import { Stacked } from "../pages";
-import { FormSchema } from "../utility/FormSchema";
+import { Stacked } from "../../../pages";
+import { FormSchema } from "../../../utility/FormSchema";
 import { Button } from "@mui/material";
 import {
   FormWrapper,

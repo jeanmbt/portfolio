@@ -13,7 +13,7 @@ export const Bio = () => {
           width: "50%",
         }}
       >
-        <Typography variant="h5" marginBottom={3}>
+        <Typography variant="h5" marginBottom={3} sx={{ fontWeight: "bold" }}>
           Bio
         </Typography>
         <Box>

@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import React from "react";
 import { Stacked } from "../../pages";
 import { useCurrentLocation } from "../../utility/useCurrentLocation";
-import { ContactForm } from "../contactForm";
+import { ContactForm } from "./contact/contactForm";
 
 export const Contact = () => {
   const [formData, setFormData] = React.useState({
