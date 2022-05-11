@@ -1,18 +1,15 @@
 import { Box, Typography } from "@mui/material";
 import { Stacked } from "../../pages";
-import { Project } from "../../types/projects";
 import { ProjectCard } from "../projectCard";
-import { projects } from "../../utility/projects";
+import { projectsData } from "../../utility/projectsData";
 
 export const Projects = () => {
   return (
     <>
+      <Typography variant="h4">Projects</Typography>
       <Stacked>
-        <Typography variant="h4">Projects</Typography>
-        {/* project placeholder */}
-        {projects.map((project) => {
+        {projectsData.map((project) => {
           return <ProjectCard key={project.title} project={project} />;
-          console.log(project);
         })}
       </Stacked>
     </>

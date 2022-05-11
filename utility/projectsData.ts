@@ -1,23 +1,32 @@
-import { Project } from "../types/projects";
+
 import artcollabs from "../public/projectImg/artcollabs.gif"
 import myly from "../public/projectImg/myly.gif"
 import peopleDotCom from "../public/projectImg/peopleDotCom.png"
 import todo from "../public/projectImg/todo.png"
 import whichhours from "../public/projectImg/whichhours.gif"
 
-export  const projects: Project[] = [
+export interface Project {
+  title: string;
+  img: string;
+  techs: string[];
+  url?: string,
+  repoUrl?: string,
+  description?: string;
+}
+
+export  const projectsData: Project[] = [
   {
     title: "PeopleDotCom",
     img: `${peopleDotCom.src}`,
-    techs: ["react", "typescript", "graphql", "mui", "prisma", "apollo", "javascript"],
-    description: "Nunc at vestibulum leo. Nam eget urna a ex facilisis molestie. In sagittis ultricies auctor."
+    techs: ["nextjs", "react", "typescript", "graphql", "mui", "prisma", "apollo", "javascript"],
+    description: ""
   },
 
   {
     title: "artcollabs",
     img:  `${artcollabs.src}`,
     techs: ["rails", "sass", "postgreSQL", "javascript"],
-    description: "Nunc at vestibulum leo. Nam eget urna a ex facilisis molestie. In sagittis ultricies auctor."
+    description: ""
     
   },
   {
