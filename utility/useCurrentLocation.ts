@@ -22,8 +22,10 @@ export const useCurrentLocation = () => {
   async function handleNavigator(position: GeolocationPosition) {
 
     const { latitude, longitude } = position.coords;
-
-    const userCountryCode = await fetchCountry({ latitude, longitude });
+    
+    // TODO: fetch instead of hardcoded
+    // const userCountryCode = await fetchCountry({ latitude, longitude });
+    const userCountryCode = "DE"
     setCountry(userCountryCode);
   }
 

@@ -4,27 +4,59 @@
 
 import styled from "@emotion/styled";
 
-  
-// export const StyledLabel = styled.label`
-//   color: ${colors.text};
-//   @media(${device.mobile}) {
-//     padding: 0.3em 0;
-//   }
-//   @media(${device.tablet}) {
-//     flex-direction: row ;
-//     padding: 0.4em;
-//   }
-//   @media(${device.laptop}) {
-//     flex-direction: row ;
-//   }
-//   @media(${device.desktop}) {
-//     flex-direction: row ;
-//   }
-// `;
+export  const device = {
+  mobile: "min-width: 320px",
+  mobileL: "min-width: 480px",
+  tablet: "min-width: 768px",
+  laptop: "min-width: 992px",
+  desktop: "min-width: 1200px"
+}
+
+const colors = {
+  text: "black",
+  button: "",
+  border: "",
+}
+export const StyledLabel = styled.label`
+  /* color: ${colors.text};
+  @media(${device.mobile}) {
+    padding: 0.3em 0;
+  }
+  @media(${device.tablet}) {
+    flex-direction: row ;
+    padding: 0.4em;
+  }
+  @media(${device.laptop}) {
+    flex-direction: row ;
+  }
+  @media(${device.desktop}) {
+    flex-direction: row ;
+  } */
+`;
 export interface IStyledInput {
   border?: string | boolean;
 }
-
+export interface IFormValues {
+  company: string;
+  name: string;
+  phone: string;
+  email: string;
+}
+export interface IUserForm {
+  country: string | undefined;
+  submitted: boolean | undefined;
+  setSubmitted: any;
+  setFormData: any;
+  formData: any;
+  setCompany: any;
+  setName: any;
+  setPhone: any;
+  setEmail: any;
+}
+export interface IFormWrapper {
+  display?: string;
+  id?: string;
+}
 export const StyledError = styled.div`
   color: red;
   font-size: small;
@@ -67,8 +99,8 @@ export const InputWrapper = styled.div`
       }
     }
     & div.phoneButtonInput  {
-    } */
-  }
+    }
+  } */
 `
 
 export const StyledInput = styled.input<IStyledInput>`
@@ -92,13 +124,13 @@ export const StyledInput = styled.input<IStyledInput>`
   }
   `;
 
-export const FormWrapper = styled.div<IFormWrapper>`
+export const FormWrapper = styled.div`
   padding: 2em;
   border-radius: 0.28em;
   display: flex;
   justify-content: center;
   align-items: center;
-  @media(${device.mobile}) {
+  /* @media(${device.mobile}) {
     margin: 0;
     padding: 0em;
     width: 100%;
@@ -118,14 +150,14 @@ export const FormWrapper = styled.div<IFormWrapper>`
   }
   @media(${device.desktop}) {
     flex-direction: row ;
-  }
+  } */
   form{
     display: flex;
     justify-content: center;
     align-items: end;
     flex-direction: column;
 
-    @media(${device.mobile}) {
+    /* @media(${device.mobile}) {
       align-items: flex-start;
     }
     @media(${device.tablet}) {
@@ -136,7 +168,7 @@ export const FormWrapper = styled.div<IFormWrapper>`
     }
     @media(${device.desktop}) {
       align-items: end;
-    }
+    } */
   }
 `;
 export interface IStyledParagraph {
@@ -144,10 +176,10 @@ export interface IStyledParagraph {
 }
 export const StyledParagraph = styled.p<IStyledParagraph>`
   text-align: center;
-  @media(${device.mobile}) {
+  /* @media(${device.mobile}) {
     display: ${(props) => (props.useCase === "displaySubmittedInfo"? `inline` : `none`)};
   }
   @media(${device.tablet}) {
     display: inline;
-  }
+  } */
 `

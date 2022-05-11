@@ -37,8 +37,8 @@ export const ProjectCard = ({ project }: ProjectCard) => {
           {project.description}
         </Box>
         <Box sx={{ width: "80%", display: "flex", justifyContent: "space-around", margin: "1em" }}>
-          <Button>repo</Button>
-          <Button>page</Button>
+          <Button variant="outlined">repository</Button>
+          <Button variant="contained">Visit page</Button>
         </Box>
       </Stacked>
     </>

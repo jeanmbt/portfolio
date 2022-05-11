@@ -1,6 +1,10 @@
 import { useFormik, FormikHelpers } from "formik";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+
+import { Stacked } from "../pages";
+import { FormSchema } from "../utility/FormSchema";
+import { Button } from "@mui/material";
 import {
   FormWrapper,
   InputWrapper,
@@ -9,8 +13,6 @@ import {
   StyledLabel,
   StyledParagraph,
 } from "./UserForm.style";
-import { FormSchema } from "../../utils/FormSchema";
-import { Stacked } from "../pages";
 
 // import { colors, Stacked } from "../../styles/global";
 
@@ -76,10 +78,6 @@ export const ContactForm = (props: IUserForm) => {
 
   return (
     <Stacked>
-      <h3>Find inbound call centers for your company</h3>
-      <StyledParagraph>
-        Use our AI and Big Data driven call center sourcing solution
-      </StyledParagraph>
       <FormWrapper>
         <form onSubmit={formik.handleSubmit}>
           <InputWrapper>
@@ -173,12 +171,13 @@ export const ContactForm = (props: IUserForm) => {
               border={formik.touched.email && formik.errors.email}
             />
           </InputWrapper>
+          {/* TODO: TEXT input */}
           <StyledError style={{ display: "none" }}>
             {formik.touched.email && formik.errors.email && formik.errors.email}
           </StyledError>
 
           {/* SUBMIT */}
-          <Button type={"submit"}>Get Informed</Button>
+          <Button type={"submit"}>Send</Button>
         </form>
       </FormWrapper>
     </Stacked>

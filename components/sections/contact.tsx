@@ -17,6 +17,7 @@ export const Contact = () => {
   const [phone, setPhone] = React.useState("");
   const [email, setEmail] = React.useState("");
   const { country, setCountry } = useCurrentLocation();
+  // const { country, setCountry } = React.useState();
 
   return (
     <>
