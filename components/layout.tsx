@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.css";
 import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 import { ReactChild, ReactChildren, ReactNode } from "react";
 import { theme, Theme } from "../styles/theme/theme";
+import { Stacked } from "../pages";
 
 interface Layout {
   theme: Theme;
@@ -87,7 +88,12 @@ export default function Layout({ children, theme }: Layout) {
         }}
       >
         <a href="https://github.com/jeanmbt" target="_blank" rel="noopener noreferrer">
-          by Jean Michel Battirola
+          <Stacked>
+            <Typography variant="h6">Jean Michel Battirola</Typography>
+            <Typography variant="subtitle2">Full-Stack Developer</Typography>
+            <Typography>+49 1522 4945 601</Typography>
+            <Typography>dev@jeanbattirola.com</Typography>
+          </Stacked>
         </a>
         <Typography margin={1} fontSize={12}>
           {/* Using: NextJs + Typescript, Prisma, Apollo, MUI, Emotion, graphQL */}

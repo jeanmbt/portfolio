@@ -53,9 +53,9 @@ const Home: NextPage = () => {
             </Section>
 
             {/* CONTACT  */}
-            <Section>
+            {/* <Section>
               <Contact />
-            </Section>
+            </Section> */}
             {/*  */}
           </Box>
         </Container>

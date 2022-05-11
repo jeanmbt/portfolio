@@ -55,6 +55,7 @@ export const ContactForm = (props: IUserForm) => {
     initialValues,
     validationSchema: FormSchema,
     onSubmit: (values: IFormValues, { setSubmitting }: FormikHelpers<IFormValues>) => {
+      // TODO: make it work (maybe get the code from repository instead, that may be working already)
       setFormData(
         `▶▶ User Data: company: ${values.company}  name: ${formik.values.name} phone: ${formik.values.phone} email: ${formik.values.email}`
       );
