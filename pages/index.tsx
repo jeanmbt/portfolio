@@ -1,8 +1,26 @@
-import { Box, Button, Container, Paper, Typography } from "@mui/material";
+import { Box, Button, Container, Paper, styled, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { AboutMe } from "../components/sections/aboutme";
+import { Theme } from "../styles/theme/theme";
+import { ProjectCard } from "../components/projectCard";
+import { Projects } from "../components/sections/projects";
+import { Contact } from "../components/sections/contact";
+
+export const Section = styled(Box)(({}) => ({
+  display: "flex",
+  justifyContent: "space-around",
+  alignItems: "flex-start",
+  marginBottom: "5em",
+}));
+
+export const Stacked = styled(Section)(({}) => ({
+  flexDirection: "column",
+  margin: 8,
+  alignItems: "center",
+}));
 
 const Home: NextPage = () => {
   return (
@@ -14,35 +32,31 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        {/* TODO: Abstract into a component */}
         <Container sx={{ paddingY: 2 }}>
+          {/* Main Document */}
           <Box
             component={Paper}
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
               margin: "auto",
-
-              height: "80vh",
             }}
-            paddingY={5}
+            paddingY={10}
           >
-            <Typography
-              sx={{ marginBottom: 5, textAlign: "center", fontSize: [50, 30] }}
-              variant="h5"
-              gutterBottom
-            >
-              Jean Michel Battirola
-            </Typography>
-            <Button
-              sx={{ width: [250], height: [100, 60], fontSize: 20 }}
-              variant="contained"
-              href="/people"
-            >
-              See all People
-            </Button>
+            {/*  */}
+            {/* ABOUT */}
+            <Section>
+              <AboutMe />
+            </Section>
+
+            {/* PROJECTS  */}
+            <Section>
+              <Projects />
+            </Section>
+
+            {/* CONTACT  */}
+            <Section>
+              <Contact />
+            </Section>
+            {/*  */}
           </Box>
         </Container>
       </main>

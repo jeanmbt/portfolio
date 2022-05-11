@@ -6,19 +6,7 @@ import logo from "../public/logo.png";
 import styles from "../styles/Home.module.css";
 import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 import { ReactChild, ReactChildren, ReactNode } from "react";
-import { theme } from "../styles/theme/theme";
-
-interface Theme {
-  children?: ReactJSXElement | string;
-  palette: {
-    mode: string;
-    primary: { main: string };
-    secondary: { main: string };
-    background: { default: string };
-    text: { primary: string; secondary: string };
-  };
-  theme?: ThemeOptions | any;
-}
+import { theme, Theme } from "../styles/theme/theme";
 
 interface Layout {
   theme: Theme;
@@ -30,9 +18,10 @@ const Header = () => {
   return (
     <Toolbar
       style={{
+        backgroundColor: theme.palette.secondary.light,
         minHeight: "1.25em",
         height: "2.25em",
-        borderBottom: `0.2em solid ${theme.palette.primary.main}`,
+        borderBottom: `0.2em solid ${theme.palette.secondary.dark}`,
       }}
     >
       <Box
@@ -84,7 +73,7 @@ export default function Layout({ children, theme }: Layout) {
         style={{
           height: "max-content",
           minHeight: "80vh",
-          backgroundColor: theme.palette.background.default,
+          backgroundColor: theme.palette.primary.light,
         }}
       >
         {children}
@@ -92,16 +81,16 @@ export default function Layout({ children, theme }: Layout) {
       <footer
         className={styles.footer}
         style={{
-          backgroundColor: theme.palette.secondary.main,
-          color: "white",
-          borderTop: `0.2em solid ${theme.palette.primary.main}`,
+          backgroundColor: theme.palette.secondary.light,
+          color: theme.palette.text.primary,
+          borderTop: `0.2em solid ${theme.palette.secondary.dark}`,
         }}
       >
         <a href="https://github.com/jeanmbt" target="_blank" rel="noopener noreferrer">
           by Jean Michel Battirola
         </a>
         <Typography margin={1} fontSize={12}>
-          Using: NextJs + Typescript, Prisma, Apollo, MUI, Emotion, graphQL
+          {/* Using: NextJs + Typescript, Prisma, Apollo, MUI, Emotion, graphQL */}
         </Typography>
       </footer>
     </>
