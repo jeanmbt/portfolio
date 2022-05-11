@@ -1,8 +1,7 @@
 import { Box, Typography, Divider } from "@mui/material";
 import { aboutMeText } from "../../utility/aboutMeText";
-import profile from "../../public/profile.png";
-import Link from "next/link";
 import { ProfilePicture } from "./aboutme/profilePicture";
+import { Links } from "./aboutme/links";
 
 export const AboutMe = () => {
   return (
@@ -11,6 +10,8 @@ export const AboutMe = () => {
         <ProfilePicture />
         <Typography variant="h6">Jean Michel Battirola</Typography>
         <Typography variant="subtitle2">Full-Stack Developer</Typography>
+
+        {/* TODO: Make <Stacked/> */}
         <Box
           sx={{
             display: "flex",
@@ -21,27 +22,16 @@ export const AboutMe = () => {
           }}
         >
           <Box>
-            <Box>+49 1522 4945 601</Box>
+            <Typography>+49 1522 4945 601</Typography>
           </Box>
           <Box>
-            <Box>dev@jeanbattirola.com</Box>
+            <Typography>dev@jeanbattirola.com</Typography>
           </Box>
-
-          {/* LINKS */}
-          <Box marginY={2}>
-            <Box>
-              <Link href="http://github.com/jeanmbt">
-                <a target="_blank">Github</a>
-              </Link>
-            </Box>
-            <Box>
-              <Link href="http://linkedin.com/in/jeanmbt">LinkedIn</Link>
-            </Box>
-            <Box>CV</Box>
-          </Box>
+          <Links />
         </Box>
       </Box>
       <Divider orientation="vertical" flexItem />
+
       <Box
         sx={{
           display: "flex",
