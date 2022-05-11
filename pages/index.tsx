@@ -33,7 +33,6 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Container sx={{ paddingY: 2 }}>
-          {/* Main Document */}
           <Box
             component={Paper}
             sx={{
@@ -41,13 +40,10 @@ const Home: NextPage = () => {
             }}
             paddingY={10}
           >
-            {/*  */}
-            {/* ABOUT */}
             <Section>
               <AboutMe />
             </Section>
 
-            {/* PROJECTS  */}
             <Section>
               <Projects />
             </Section>

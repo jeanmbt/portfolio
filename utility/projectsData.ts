@@ -19,32 +19,32 @@ export  const projectsData: Project[] = [
     title: "PeopleDotCom (CHANGE PICTURE)",
     img: `${peopleDotCom.src}`,
     techs: ["nextjs", "react", "typescript", "graphql", "mui", "prisma", "apollo", "javascript"],
-    description: "NextJs application using Apollo, Prisma, GraphQL for the backend and data fetching. With lazy load, sorting"
+    description: "NextJs full-stack application using Apollo, Prisma, GraphQL for the backend and data fetching. Responsive, accessible, with lazy load, sorting."
   },
 
   {
     title: "artcollabs",
     img:  `${artcollabs.src}`,
     techs: ["rails", "sass", "postgreSQL", "javascript"],
-    description: ""
+    description: "Full-stack application with authentication, authorization with multiple dynamic pages for artists to interact and collaborate"
     
   },
   {
     title: "React To Do",
     img:  `${todo.src}`,
     techs: ["react", "typescript", "styled components", "javascript"],
-    description: "Nunc at vestibulum leo. Nam eget urna a ex facilisis molestie. In sagittis ultricies auctor."
+    description: `Simple front-end "To-Do" React application. With themable design and local data storage.`
   },
   {
     title: "myly",
     img:  `${myly.src}`,
     techs: ["rails", "sass", "postgreSQL", "javascript"],
-    description: "Nunc at vestibulum leo. Nam eget urna a ex facilisis molestie. In sagittis ultricies auctor."
+    description: "Full-stack application for musicians to store, rate and share music lyrics."
   },
   {
     title: "whichHours",
     img:  `${whichhours.src}`,
     techs: ["rails", "sass", "postgreSQL", "javascript"],
-    description: "Nunc at vestibulum leo. Nam eget urna a ex facilisis molestie. In sagittis ultricies auctor."
+    description: "Full-stack application for storing and displaying companies opening times and other relevant information."
   },
 ];

@@ -9,7 +9,6 @@ interface ProjectCard {
 }
 
 export const ProjectCard = ({ project }: ProjectCard) => {
-  const img = project.img;
   return (
     <>
       <Typography variant="h6" marginTop={5}>
