@@ -42,8 +42,8 @@ const Header = () => {
       <Box
         sx={{
           display: "flex",
-          width: "62%",
-          justifyContent: "space-between",
+          width: "100%",
+          justifyContent: "space-around",
           alignItems: "center",
           flexWrap: "wrap",
           margin: 0,
