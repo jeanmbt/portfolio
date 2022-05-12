@@ -1,4 +1,4 @@
-import { Box, Typography, Paper, Button, Toolbar, ButtonGroup } from "@mui/material";
+import { Box, Tooltip, Typography, Paper, Button, Toolbar, ButtonGroup } from "@mui/material";
 import { deepOrange } from "@mui/material/colors";
 import { Stacked } from "../../../pages";
 import { theme } from "../../../styles/theme/theme";
@@ -53,36 +53,44 @@ export const ProjectCard = ({ project }: ProjectCard) => {
             </Typography>
           </Box>
           <ButtonGroup sx={{ display: "flex", justifyContent: "flex-end", margin: 3 }}>
-            <Button
-              target="_blank"
-              href={`${project.repoUrl}`}
-              variant="outlined"
-              sx={{
-                value: `${project.title} GitHub Repository`,
-                ariaLabel: `${project.title} GitHub Repository`,
-                color: theme.palette.secondary.main,
-                border: ` 1px solid ${theme.palette.secondary.main} !important`,
-                "&:hover": {
-                  border: `1px solid ${theme.palette.primary.dark} !important`,
-                  color: theme.palette.primary.dark,
-                },
-              }}
-            >
-              <GitHubIcon />
-            </Button>
-            <Button
-              target="_blank"
-              href={`${project.url}`}
-              variant="contained"
-              sx={{
-                value: `Visit ${project.title}`,
-                ariaLabel: `Visit ${project.title} `,
-                bgcolor: theme.palette.secondary.main,
-                color: theme.palette.text.secondary,
-              }}
-            >
-              <TabIcon />
-            </Button>
+            <Tooltip title={`Visit ${project.title}'s repository`}>
+              <Button
+                target="_blank"
+                href={`${project.repoUrl}`}
+                variant="outlined"
+                sx={{
+                  value: `${project.title} GitHub Repository`,
+                  ariaLabel: `${project.title} GitHub Repository`,
+                  color: theme.palette.secondary.main,
+                  border: ` 1px solid ${theme.palette.secondary.main} !important`,
+                  "&:hover": {
+                    border: `1px solid ${theme.palette.primary.main} !important`,
+                    color: theme.palette.text.secondary,
+                    bgcolor: theme.palette.primary.main,
+                  },
+                }}
+              >
+                <GitHubIcon />
+              </Button>
+            </Tooltip>
+            <Tooltip title={`Visit ${project.title}`}>
+              <Button
+                target="_blank"
+                href={`${project.url}`}
+                variant="contained"
+                sx={{
+                  value: `Visit ${project.title}`,
+                  ariaLabel: `Visit ${project.title} `,
+                  bgcolor: theme.palette.secondary.main,
+                  color: theme.palette.text.secondary,
+                  "&:hover": {
+                    bgcolor: theme.palette.primary.dark,
+                  },
+                }}
+              >
+                <TabIcon />
+              </Button>
+            </Tooltip>
           </ButtonGroup>
         </Box>
       </Stacked>
