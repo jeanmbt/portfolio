@@ -31,7 +31,7 @@ const Header = () => {
         sx={{
           display: "flex",
           width: "60%",
-          justifyContent: "space-between",
+          justifyContent: "center",
           alignItems: "center",
           flexWrap: "wrap",
           margin: 0,
@@ -43,9 +43,15 @@ const Header = () => {
         <Link href="/" passHref>
           JEAN MICHEL BATTIROLA
         </Link>
-        <Button href="/art" variant="text" sx={{ color: theme.palette.text.secondary }}>
+        {/* 
+        TODO: Make a better under construction page
+        <Button
+          href="/art"
+          variant="text"
+          sx={{ color: theme.palette.text.secondary, fontFamily: "Koulen " }}
+        >
           art?
-        </Button>
+        </Button> */}
         {/* // TODO: make responsive */}
       </Box>
     </Toolbar>

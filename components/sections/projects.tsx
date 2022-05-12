@@ -14,9 +14,10 @@ export const Projects = () => {
           sx={{
             width: "75.2%",
             fontWeight: "bold",
-            color: theme.palette.primary.main,
+            color: theme.palette.background.default,
             bgcolor: theme.palette.secondary.main,
             paddingLeft: "0.7em",
+            fontFamily: "Koulen ",
           }}
         >
           PROJECTS
