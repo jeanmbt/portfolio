@@ -1,5 +1,4 @@
 import { Box, Tooltip, Typography, Paper, Button, Toolbar, ButtonGroup } from "@mui/material";
-import { deepOrange } from "@mui/material/colors";
 import { Stacked } from "../../../pages";
 import { theme } from "../../../styles/theme/theme";
 import { Project } from "../../../utility/projectsData";
@@ -53,7 +52,7 @@ export const ProjectCard = ({ project }: ProjectCard) => {
             </Typography>
           </Box>
           <ButtonGroup sx={{ display: "flex", justifyContent: "flex-end", margin: 3 }}>
-            <Tooltip title={`Visit ${project.title}'s repository`}>
+            <Tooltip title={`Visit ${project.title}'s GitHub repository`}>
               <Button
                 target="_blank"
                 href={`${project.repoUrl}`}
@@ -66,7 +65,7 @@ export const ProjectCard = ({ project }: ProjectCard) => {
                   "&:hover": {
                     border: `1px solid ${theme.palette.primary.main} !important`,
                     color: theme.palette.text.secondary,
-                    bgcolor: theme.palette.primary.main,
+                    bgcolor: theme.palette.primary.dark,
                   },
                 }}
               >

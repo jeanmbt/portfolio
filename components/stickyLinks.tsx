@@ -1,6 +1,4 @@
 import { Box, Button, ButtonGroup, Tooltip } from "@mui/material";
-import Link from "next/link";
-import { theme } from "../styles/theme/theme";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -13,7 +11,7 @@ export const StickyLinks = () => {
       <Box
         marginY={2}
         padding={1}
-        sx={{ position: "sticky", right: "100%", top: "40%", paddingX: 1 }}
+        sx={{ position: "sticky", right: "100%", top: "35%", paddingX: 1 }}
       >
         <ButtonGroup orientation="vertical">
           <Tooltip title="GitHub">

@@ -1,4 +1,3 @@
-
 import artcollabs from "../public/projectImages/artcollabs.gif"
 import myly from "../public/projectImages/myly.gif"
 import peopleDotCom from "../public/projectImages/peopledotcom.gif"

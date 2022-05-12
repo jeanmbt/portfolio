@@ -1,14 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import {
-  Box,
-  Button,
-  createTheme,
-  ThemedProps,
-  ThemeOptions,
-  Toolbar,
-  Typography,
-  Divider,
-} from "@mui/material";
+import { Box, Button, Toolbar, Typography } from "@mui/material";
 import Link from "next/link";
 
 import styles from "../styles/Home.module.css";

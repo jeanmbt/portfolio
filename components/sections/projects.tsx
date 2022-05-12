@@ -1,10 +1,9 @@
-import { Box, Button, Divider, Typography, Paper } from "@mui/material";
+import { Button, Divider, Typography } from "@mui/material";
 import { Stacked } from "../../pages";
 import { ProjectCard } from "./projects/projectCard";
 import { projectsData } from "../../utility/projectsData";
 import { theme } from "../../styles/theme/theme";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
-import Link from "next/link";
 
 export const Projects = () => {
   return (

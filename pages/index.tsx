@@ -1,14 +1,8 @@
 import { Box, Button, Container, Paper, styled, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { AboutMe } from "../components/sections/aboutme";
-import { theme, Theme } from "../styles/theme/theme";
-import { ProjectCard } from "../components/sections/projects/projectCard";
 import { Projects } from "../components/sections/projects";
-import { Contact } from "../components/sections/contact";
-import Link from "next/link";
 import { StickyLinks } from "../components/stickyLinks";
 
 export const Section = styled(Box)(({}) => ({
