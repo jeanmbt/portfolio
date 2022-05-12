@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
 import { theme } from "../../../../styles/theme/theme";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 export const ContactInfo = () => {
   return (
@@ -16,14 +17,24 @@ export const ContactInfo = () => {
         <Link href="mailto:dev@jeanbattirola.com">
           <a target="_blank">
             {/* TODO: Make copy to clipboard button */}
-            <Typography variant="body1" sx={{ padding: 0.5, bgcolor: theme.palette.primary.dark }}>
+            <Typography
+              variant="body1"
+              sx={{
+                padding: 0.5,
+                bgcolor: theme.palette.primary.dark,
+                "&:hover": { bgcolor: theme.palette.secondary.light },
+              }}
+            >
               dev@jeanbattirola.com
             </Typography>
           </a>
         </Link>
       </Box>
       <Box>
-        <Typography variant="subtitle2">+49 1522 4945 601</Typography>
+        <Typography variant="subtitle2" marginTop={1}>
+          <LocalPhoneIcon sx={{ fontSize: "1em" }} />
+              49 1522 4945 601
+        </Typography>
       </Box>
     </>
   );

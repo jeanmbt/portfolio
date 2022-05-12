@@ -18,7 +18,12 @@ export const Bio = () => {
         <Typography
           variant="h5"
           marginBottom={3}
-          sx={{ fontWeight: "bold", color: theme.palette.primary.main, fontFamily: "Koulen " }}
+          sx={{
+            fontWeight: "bold",
+            color: theme.palette.primary.main,
+            fontFamily: "Koulen ",
+            letterSpacing: "0.1em",
+          }}
         >
           Bio
         </Typography>

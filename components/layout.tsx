@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import { ReactNode } from "react";
 import { theme, Theme } from "../styles/theme/theme";
 import { Stacked } from "../pages";
-
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 interface Layout {
   theme: Theme;
   children: ReactNode;
@@ -19,10 +19,11 @@ const Header = () => {
         bgcolor: theme.palette.secondary.main,
         minHeight: "1.50em !important",
         height: "2.25em",
-
         color: theme.palette.background.paper,
         display: "flex",
         justifyContent: "center",
+        position: "sticky",
+        top: "0%",
       }}
     >
       {/* TODO: ADD switch from  https://mui.com/material-ui/react-switch/ to toggle themes*/}
@@ -91,10 +92,11 @@ export default function Layout({ children, theme }: Layout) {
               </Typography>
             </a>
           </Link>
-
           <hr />
           <Typography>dev@jeanbattirola.com</Typography>
-          <Typography variant="subtitle2">+49 1522 4945 601</Typography>
+          <Typography variant="subtitle2" sx={{ fontFamily: "Koulen ", letterSpacing: "0.1em" }}>
+            <LocalPhoneIcon sx={{ fontSize: "1em" }} /> +49 1522 4945 601
+          </Typography>
         </Stacked>
       </footer>
     </>
