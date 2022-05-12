@@ -24,7 +24,6 @@ interface Layout {
 
 // TODO: abstract to it's own file
 const Header = () => {
-  console.log(theme);
   return (
     <Toolbar
       sx={{

@@ -1,11 +1,10 @@
 import { Box, Paper } from "@mui/material";
 
 export const ProjectCardImage = (image: any) => {
-  console.log(image);
   return (
+    // TODO: make responsive
     <Box
       margin=""
-      // TODO: make responsive
       paddingX="43.6%"
       paddingY="20%"
       component={Paper}

@@ -83,6 +83,7 @@ export const ProjectCard = ({ project }: ProjectCard) => {
                   ariaLabel: `Visit ${project.title} `,
                   bgcolor: theme.palette.secondary.main,
                   color: theme.palette.text.secondary,
+                  boxShadow: "none",
                   "&:hover": {
                     bgcolor: theme.palette.primary.dark,
                   },
