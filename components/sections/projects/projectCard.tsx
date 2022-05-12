@@ -66,7 +66,7 @@ export const ProjectCard = ({ project }: ProjectCard) => {
                   "&:hover": {
                     border: `1px solid ${theme.palette.primary.main} !important`,
                     color: theme.palette.text.secondary,
-                    bgcolor: theme.palette.primary.main,
+                    bgcolor: theme.palette.primary.dark,
                   },
                 }}
               >
