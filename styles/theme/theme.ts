@@ -22,10 +22,10 @@ export interface Theme {
 export const theme = createTheme({
   palette: {
     mode: "light",
-    primary: { light: lime[50], main: lime[900],dark: lime[900] },
-    secondary: { light: deepOrange[500], main: orange[900],  dark: deepOrange[900] },
-    background: {default: "#ffffff99", paper: "#ffffff6b"},
-    text: { primary: "#000", secondary: "#fff"}
+    primary: { light: "#F1F2ED", main: "#b8be23",dark: "#76761e"},
+    secondary: { light: deepOrange[500], main: "#E64C00",  dark: "#9C2B14" },
+    background: {default: "#02444F", paper: "#fff"},
+    text: { primary: "#000", secondary: "#F1F2ED"}
   },
 });
 

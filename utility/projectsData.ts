@@ -1,7 +1,7 @@
 
 import artcollabs from "../public/projectImages/artcollabs.gif"
 import myly from "../public/projectImages/myly.gif"
-import peopleDotCom from "../public/projectImages/peopleDotCom.gif"
+import peopleDotCom from "../public/projectImages/peopledotcom.gif"
 import todo from "../public/projectImages/todo.png"
 import whichhours from "../public/projectImages/whichhours.gif"
 
