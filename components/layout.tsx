@@ -83,7 +83,6 @@ export default function Layout({ children, theme }: Layout) {
           borderTop: `0.2em solid ${theme.palette.secondary.dark}`,
         }}
       >
-        <Box></Box>
         <Stacked sx={{ color: theme.palette.text.secondary }}>
           <Link href="https://github.com/jeanmbt/portfolio">
             <a target="_blank">
@@ -94,9 +93,14 @@ export default function Layout({ children, theme }: Layout) {
           </Link>
           <hr />
           <Typography>dev@jeanbattirola.com</Typography>
-          <Typography variant="subtitle2" sx={{ fontFamily: "Koulen ", letterSpacing: "0.1em" }}>
-            <LocalPhoneIcon sx={{ fontSize: "1em" }} /> +49 1522 4945 601
-          </Typography>
+          <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <Typography
+              variant="subtitle2"
+              sx={{ fontFamily: "Koulen ", letterSpacing: "0.1em", fontSize: "1em" }}
+            >
+              <LocalPhoneIcon sx={{ fontSize: "0.8em" }} /> +49 1522 4945 601
+            </Typography>
+          </Box>
         </Stacked>
       </footer>
     </>
