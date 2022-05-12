@@ -63,7 +63,7 @@ export const StickyLinks = () => {
             <Button
               target="_blank"
               variant="contained"
-              href="https://drive.google.com/file/d/1NEtpQDZWAJxut1Ir7rFHurKxxj_fg5RX/view?usp=sharing"
+              href="https://drive.google.com/file/d/1HoRfC3mjL_oMrog1XJwTVcRKQpOfsZi_/view?usp=sharing"
               sx={{
                 width: 0,
                 value: `CV`,
