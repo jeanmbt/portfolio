@@ -5,6 +5,8 @@ import peopleDotCom from "../public/projectImages/peopledotcom.gif"
 import todo from "../public/projectImages/todo.png"
 import whichhours from "../public/projectImages/whichhours.gif"
 
+// TODO: https://nextjs.org/docs/api-reference/next/image#acceptable-formats
+// Use adequate format for better performance
 export interface Project {
   title: string;
   image: string;

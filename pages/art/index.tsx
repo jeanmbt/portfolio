@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup, Container, Typography } from "@mui/material";
+import { Button, ButtonGroup, Container, Typography } from "@mui/material";
 import { NextPage } from "next";
 
 const Art: NextPage = () => {
@@ -18,7 +18,7 @@ const Art: NextPage = () => {
       >{`I'm glad you're here but this part is still under construction! :(`}</Typography>
       But you can check my links:
       <hr />
-      <ButtonGroup variant="contained">
+      <ButtonGroup>
         <Button target="_blank" href="http://instagram.com/jeanhmua">
           Beauty
         </Button>

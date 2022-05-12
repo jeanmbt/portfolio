@@ -31,7 +31,6 @@ export const useCurrentLocation = () => {
 
   const handleError = (error: GeolocationPositionError) => {
     setError(error.message);
-    console.log(error.message);
     setCountry("de");
   };
 

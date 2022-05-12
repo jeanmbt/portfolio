@@ -32,7 +32,7 @@ export const Projects = () => {
         })}
         <Button>
           {/* eslint-disable-next-line @next/next/link-passhref */}
-          <Link passHref={false} href={"/"}>
+          <Link passHref={false} href={"/"} ariaLabel={"Back to the top"}>
             <ArrowUpwardIcon />
           </Link>
         </Button>
