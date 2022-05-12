@@ -1,14 +1,25 @@
-import { Box, Divider, Typography, Paper } from "@mui/material";
+import { Box, Button, Divider, Typography, Paper } from "@mui/material";
 import { Stacked } from "../../pages";
 import { ProjectCard } from "./projects/projectCard";
 import { projectsData } from "../../utility/projectsData";
 import { theme } from "../../styles/theme/theme";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import Link from "next/link";
 
 export const Projects = () => {
   return (
     <>
       <Stacked>
-        <Typography variant="h2" sx={{ fontWeight: "bold", color: theme.palette.primary.dark }}>
+        <Typography
+          variant="h2"
+          sx={{
+            width: "75.2%",
+            fontWeight: "bold",
+            color: theme.palette.primary.main,
+            bgcolor: theme.palette.secondary.main,
+            paddingLeft: "1em",
+          }}
+        >
           PROJECTS
         </Typography>
         {projectsData.map((project) => {
@@ -19,6 +30,12 @@ export const Projects = () => {
             </>
           );
         })}
+        <Button>
+          {/* eslint-disable-next-line @next/next/link-passhref */}
+          <Link passHref={false} href={"/"}>
+            <ArrowUpwardIcon />
+          </Link>
+        </Button>
       </Stacked>
     </>
   );

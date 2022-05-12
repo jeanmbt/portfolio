@@ -9,6 +9,7 @@ import { ProjectCard } from "../components/sections/projects/projectCard";
 import { Projects } from "../components/sections/projects";
 import { Contact } from "../components/sections/contact";
 import Link from "next/link";
+import { StickyLinks } from "../components/stickyLinks";
 
 export const Section = styled(Box)(({}) => ({
   display: "flex",
@@ -28,15 +29,9 @@ const Home: NextPage = () => {
   return (
     <div
       style={{
-        background:
-          "linear-gradient(360deg, #b0b28348 1%, rgba(255,255,255,0.0020278375021883788) 28%, #bebfb13a 100%)",
+        background: "linear-gradient(180deg, #02444F 1%,  #024f4b 100%)",
         minHeight: "100vh",
-        padding: "4rem 0",
-        flex: "1",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
+        padding: "0",
       }}
     >
       <Head>
@@ -45,14 +40,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container sx={{ paddingY: 2 }}>
+      <StickyLinks />
+
+      <Container sx={{ marginTop: "-130px" }}>
         <Box
-          component={Paper}
           sx={{
             margin: "auto",
-            bgcolor: theme.palette.primary.light,
-            background:
-              "linear-gradient(180deg, #b0b28348 1%, rgba(255,255,255,0.0020278375021883788) 28%, rgba(176,178,131,0.7583303585105917) 100%)",
           }}
           paddingY={10}
         >
@@ -63,6 +56,7 @@ const Home: NextPage = () => {
           <Section sx={{ marginTop: 20 }}>
             <Projects />
           </Section>
+
           {/* TODO: Fix migrated contact form  */}
           {/* CONTACT  */}
           {/* <Section>
@@ -71,11 +65,6 @@ const Home: NextPage = () => {
           {/*  */}
         </Box>
       </Container>
-      <Button>
-        <Link passHref={false} href={""}>
-          to the top
-        </Link>
-      </Button>
     </div>
   );
 };

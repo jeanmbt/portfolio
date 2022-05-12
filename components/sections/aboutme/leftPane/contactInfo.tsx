@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
+import { theme } from "../../../../styles/theme/theme";
 
 export const ContactInfo = () => {
   return (

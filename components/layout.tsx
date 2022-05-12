@@ -28,11 +28,13 @@ const Header = () => {
   return (
     <Toolbar
       sx={{
-        bgcolor: theme.palette.secondary.dark,
+        bgcolor: theme.palette.secondary.main,
         minHeight: "1.50em !important",
         height: "2.25em",
 
         color: theme.palette.background.paper,
+        display: "flex",
+        justifyContent: "center",
       }}
     >
       {/* TODO: ADD switch from  https://mui.com/material-ui/react-switch/ to toggle themes*/}
@@ -40,7 +42,7 @@ const Header = () => {
       <Box
         sx={{
           display: "flex",
-          width: "100%",
+          width: "62%",
           justifyContent: "space-between",
           alignItems: "center",
           flexWrap: "wrap",
@@ -49,10 +51,10 @@ const Header = () => {
         }}
       >
         <Link href="/" passHref>
-          Jean Michel Battirola - Web developer
+          JEAN MICHEL BATTIROLA
         </Link>
         <Button href="/art" variant="text" sx={{ color: theme.palette.text.secondary }}>
-          Here for my art?
+          art?
         </Button>
         {/* // TODO: make responsive */}
       </Box>
