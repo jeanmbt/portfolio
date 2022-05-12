@@ -36,7 +36,7 @@ const Home: NextPage = () => {
     >
       <Head>
         <title>Jean Michel Battirola</title>
-        <meta name="description" content="Full-stack Developer" />
+        <meta name="description" content="Web Developer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
