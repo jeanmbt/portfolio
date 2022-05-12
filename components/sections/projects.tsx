@@ -17,7 +17,7 @@ export const Projects = () => {
             fontWeight: "bold",
             color: theme.palette.primary.main,
             bgcolor: theme.palette.secondary.main,
-            paddingLeft: "1em",
+            paddingLeft: "0.5em",
           }}
         >
           PROJECTS
