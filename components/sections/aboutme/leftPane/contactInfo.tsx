@@ -8,7 +8,7 @@ export const ContactInfo = () => {
       <Typography variant="h6" sx={{ fontWeight: "bold" }}>
         Jean Michel Battirola
       </Typography>
-      <Typography variant="body1" sx={{ fontFamily: "Koulen " }}>
+      <Typography variant="body1" sx={{ fontFamily: "Koulen ", letterSpacing: " 0.05em" }}>
         Web developer
       </Typography>
       <hr />

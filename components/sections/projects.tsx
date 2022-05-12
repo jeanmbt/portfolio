@@ -18,6 +18,7 @@ export const Projects = () => {
             bgcolor: theme.palette.secondary.main,
             paddingLeft: "0.7em",
             fontFamily: "Koulen ",
+            letterSpacing: " 0.05em",
           }}
         >
           PROJECTS

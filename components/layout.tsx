@@ -38,6 +38,8 @@ const Header = () => {
           color: theme.palette.text.secondary,
           fontWeight: "bold",
           fontSize: "0.8em",
+          fontFamily: "Koulen ",
+          letterSpacing: " 0.5em",
         }}
       >
         <Link href="/" passHref>

@@ -44,7 +44,11 @@ export const ProjectCard = ({ project }: ProjectCard) => {
             })}
           </Toolbar>
           <Box padding={2} margin={4}>
-            <Typography variant="h6" marginBottom={1} sx={{ fontFamily: "Koulen " }}>
+            <Typography
+              variant="h6"
+              marginBottom={1}
+              sx={{ fontFamily: "Koulen ", letterSpacing: " 0.05em" }}
+            >
               {project.title}
             </Typography>
             <Typography>
