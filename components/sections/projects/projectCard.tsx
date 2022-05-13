@@ -47,7 +47,10 @@ export const ProjectCard = ({ project }: ProjectCard) => {
             <Typography
               variant="h6"
               marginBottom={1}
-              sx={{ fontFamily: "Koulen ", letterSpacing: " 0.05em" }}
+              sx={{
+                fontFamily: "Koulen ",
+                letterSpacing: " 0.05em",
+              }}
             >
               {project.title}
             </Typography>
