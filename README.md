@@ -1,6 +1,10 @@
-This is a [Next.js](https://nextjs.org/), [MUI v5](https://mui.com/) and [Typescript](https://github.com/microsoft/TypeScript) starter. You can use this to start your Next.js + MUI + Typescript development faster and easier.
+My portfolio! This project is active.
 
-## Getting Started
+It's built using NextJs, React, TypeScript and MUI.
+
+
+
+## Running locally
 
 1. First download files.
 2. (Optional) If you want, You can also change the project name to whatever your like and also add the project name in "package.json".
