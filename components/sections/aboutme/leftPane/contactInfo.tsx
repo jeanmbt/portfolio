@@ -14,7 +14,7 @@ export const ContactInfo = () => {
       </Typography>
       <hr />
       <Box>
-        <Link href="mailto:jeanbattirola@gmail.com">
+        <Link href="mailto:dev@jeanbattirola.com">
           <a target="_blank">
             {/* TODO: Make copy to clipboard button */}
             <Typography
@@ -25,7 +25,7 @@ export const ContactInfo = () => {
                 "&:hover": { bgcolor: theme.palette.secondary.light },
               }}
             >
-              jeanbattirola@gmail.com
+              dev@jeanbattirola.com
             </Typography>
           </a>
         </Link>

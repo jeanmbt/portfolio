@@ -38,7 +38,7 @@ export const StickyLinks = () => {
               target="_blank"
               size="small"
               variant="contained"
-              href="mailto:jeanbattirola@gmail.com"
+              href="mailto:dev@jeanbattirola.com"
             >
               <EmailIcon />
             </Button>
