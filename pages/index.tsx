@@ -50,13 +50,6 @@ const Home: NextPage = () => {
           <Section sx={{ marginTop: 20 }}>
             <Projects />
           </Section>
-
-          {/* TODO: Fix migrated contact form  */}
-          {/* CONTACT  */}
-          {/* <Section>
-              <Contact />
-            </Section> */}
-          {/*  */}
         </Box>
       </Container>
     </div>
