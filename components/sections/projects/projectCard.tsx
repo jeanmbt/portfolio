@@ -35,7 +35,7 @@ export const ProjectCard = ({ project }: ProjectCard) => {
               return (
                 <Typography
                   variant="body2"
-                  sx={{ color: theme.palette.secondary.main, fontWeight: "bold" }}
+                  sx={{ color: theme.palette.primary.dark, fontWeight: "bold" }}
                   key={`${tech}${project}`}
                 >
                   {tech.toUpperCase()}
