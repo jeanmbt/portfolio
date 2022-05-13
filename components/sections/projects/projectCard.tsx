@@ -12,7 +12,7 @@ interface ProjectCard {
 export const ProjectCard = ({ project }: ProjectCard) => {
   return (
     <>
-      <Stacked sx={{ margin: 10, width: 1, padding: 10 }}>
+      <Stacked key={`${project.title}`} sx={{ margin: 10, width: 1, padding: 10 }}>
         <ProjectCardImage image={project.image} />
 
         <Box
