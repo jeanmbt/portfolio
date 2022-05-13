@@ -92,7 +92,7 @@ export default function Layout({ children, theme }: Layout) {
             </a>
           </Link>
           <hr />
-          <Typography>dev@jeanbattirola.com</Typography>
+          <Typography>jeanbattirola@gmail.com</Typography>
           <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <Typography
               variant="subtitle2"
