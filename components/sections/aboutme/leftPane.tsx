@@ -5,21 +5,19 @@ import { ContactInfo } from "./leftPane/contactInfo";
 
 import { ProfilePicture } from "./leftPane/profilePicture";
 
+//  TODO: Make <Stack/> from mui
 export const LeftPane = () => {
   return (
-    <>
-      {/* TODO: Make <Stack/> from mui */}
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
-          color: theme.palette.text.secondary,
-        }}
-      >
-        <ProfilePicture />
-        <ContactInfo />
-      </Box>
-    </>
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        color: theme.palette.text.secondary,
+      }}
+    >
+      <ProfilePicture />
+      <ContactInfo />
+    </Box>
   );
 };
