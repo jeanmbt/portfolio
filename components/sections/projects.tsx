@@ -7,37 +7,30 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 export const Projects = () => {
   return (
-    <>
-      <Stacked>
-        <Typography
-          variant="h2"
-          sx={{
-            width: "75.2%",
-            fontWeight: "bold",
-            color: theme.palette.background.default,
-            bgcolor: theme.palette.secondary.main,
-            paddingLeft: "0.7em",
-            fontFamily: "Koulen ",
-            letterSpacing: " 0.05em",
-          }}
-        >
-          PROJECTS
-        </Typography>
-        {projectsData.map((project) => {
-          return (
-            <>
-              <ProjectCard key={project.title} project={project} />
-              <Divider />
-            </>
-          );
-        })}
-        <Button>
-          {/* eslint-disable-next-line @next/next/link-passhref */}
-          <Button href={"/"} sx={{ ariaLabel: "Back to the top" }}>
-            <ArrowUpwardIcon />
-          </Button>
+    <Stacked>
+      <Typography
+        variant="h2"
+        sx={{
+          width: "75.2%",
+          fontWeight: "bold",
+          color: theme.palette.background.default,
+          bgcolor: theme.palette.secondary.main,
+          paddingLeft: "0.7em",
+          fontFamily: "Koulen ",
+          letterSpacing: " 0.05em",
+        }}
+      >
+        PROJECTS
+      </Typography>
+      {projectsData.map((project) => {
+        return <ProjectCard key={`divider=${project.title}`} project={project} />;
+      })}
+      <Button>
+        {/* eslint-disable-next-line @next/next/link-passhref */}
+        <Button href={"/"} sx={{ ariaLabel: "Back to the top" }}>
+          <ArrowUpwardIcon />
         </Button>
-      </Stacked>
-    </>
+      </Button>
+    </Stacked>
   );
 };

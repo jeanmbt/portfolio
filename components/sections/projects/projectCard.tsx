@@ -11,96 +11,94 @@ interface ProjectCard {
 
 export const ProjectCard = ({ project }: ProjectCard) => {
   return (
-    <>
-      <Stacked key={`${project.title}`} sx={{ margin: 10, width: 1, padding: 10 }}>
-        <ProjectCardImage image={project.image} />
+    <Stacked key={`${project.title}`} sx={{ margin: 10, width: 1, padding: 10 }}>
+      <ProjectCardImage image={project.image} />
 
-        <Box
-          component={Paper}
+      <Box
+        component={Paper}
+        sx={{
+          width: 0.871,
+          bgcolor: theme.palette.primary.light,
+          borderTopLeftRadius: "0",
+          borderTopRightRadius: "0",
+        }}
+      >
+        <Toolbar
           sx={{
-            width: 0.871,
-            bgcolor: theme.palette.primary.light,
-            borderTopLeftRadius: "0",
-            borderTopRightRadius: "0",
+            background: `linear-gradient(360deg, rgba(255,255,255,0.0020278375021883788) 60%, ${theme.palette.primary.dark} 450%)`,
+            display: "flex",
+            justifyContent: "space-around",
           }}
         >
-          <Toolbar
+          {project.techs.map((tech: any) => {
+            return (
+              <Typography
+                variant="body2"
+                sx={{ color: theme.palette.primary.dark, fontWeight: "bold" }}
+                key={`${tech}${project}`}
+              >
+                {tech.toUpperCase()}
+              </Typography>
+            );
+          })}
+        </Toolbar>
+        <Box padding={2} margin={4}>
+          <Typography
+            variant="h6"
+            marginBottom={1}
             sx={{
-              background: `linear-gradient(360deg, rgba(255,255,255,0.0020278375021883788) 60%, ${theme.palette.primary.dark} 450%)`,
-              display: "flex",
-              justifyContent: "space-around",
+              fontFamily: "Koulen ",
+              letterSpacing: " 0.05em",
             }}
           >
-            {project.techs.map((tech: any) => {
-              return (
-                <Typography
-                  variant="body2"
-                  sx={{ color: theme.palette.primary.dark, fontWeight: "bold" }}
-                  key={`${tech}${project}`}
-                >
-                  {tech.toUpperCase()}
-                </Typography>
-              );
-            })}
-          </Toolbar>
-          <Box padding={2} margin={4}>
-            <Typography
-              variant="h6"
-              marginBottom={1}
+            {project.title}
+          </Typography>
+          <Typography>
+            <Typography>{project.description}</Typography>
+          </Typography>
+        </Box>
+        <ButtonGroup sx={{ display: "flex", justifyContent: "flex-end", margin: 3 }}>
+          <Tooltip title={`Visit ${project.title}'s GitHub repository`}>
+            <Button
+              target="_blank"
+              href={`${project.repoUrl}`}
+              variant="outlined"
               sx={{
-                fontFamily: "Koulen ",
-                letterSpacing: " 0.05em",
+                value: `${project.title} GitHub Repository`,
+                ariaLabel: `${project.title} GitHub Repository`,
+                color: theme.palette.secondary.main,
+                border: ` 1px solid ${theme.palette.secondary.main} !important`,
+                "&:hover": {
+                  border: `1px solid ${theme.palette.primary.main} !important`,
+                  color: theme.palette.text.secondary,
+                  bgcolor: theme.palette.primary.dark,
+                },
               }}
             >
-              {project.title}
-            </Typography>
-            <Typography>
-              <Typography>{project.description}</Typography>
-            </Typography>
-          </Box>
-          <ButtonGroup sx={{ display: "flex", justifyContent: "flex-end", margin: 3 }}>
-            <Tooltip title={`Visit ${project.title}'s GitHub repository`}>
-              <Button
-                target="_blank"
-                href={`${project.repoUrl}`}
-                variant="outlined"
-                sx={{
-                  value: `${project.title} GitHub Repository`,
-                  ariaLabel: `${project.title} GitHub Repository`,
-                  color: theme.palette.secondary.main,
-                  border: ` 1px solid ${theme.palette.secondary.main} !important`,
-                  "&:hover": {
-                    border: `1px solid ${theme.palette.primary.main} !important`,
-                    color: theme.palette.text.secondary,
-                    bgcolor: theme.palette.primary.dark,
-                  },
-                }}
-              >
-                <GitHubIcon />
-              </Button>
-            </Tooltip>
-            <Tooltip title={`Visit ${project.title}`}>
-              <Button
-                target="_blank"
-                href={`${project.url}`}
-                variant="contained"
-                sx={{
-                  value: `Visit ${project.title}`,
-                  ariaLabel: `Visit ${project.title} `,
-                  bgcolor: theme.palette.secondary.main,
-                  color: theme.palette.text.secondary,
-                  boxShadow: "none",
-                  "&:hover": {
-                    bgcolor: theme.palette.primary.dark,
-                  },
-                }}
-              >
-                <TabIcon />
-              </Button>
-            </Tooltip>
-          </ButtonGroup>
-        </Box>
-      </Stacked>
-    </>
+              <GitHubIcon />
+            </Button>
+          </Tooltip>
+          <Tooltip title={`Visit ${project.title}`}>
+            <Button
+              target="_blank"
+              href={`${project.url}`}
+              variant="contained"
+              sx={{
+                value: `Visit ${project.title}`,
+                ariaLabel: `Visit ${project.title} `,
+                bgcolor: theme.palette.secondary.main,
+                color: theme.palette.text.secondary,
+                boxShadow: "none",
+                "&:hover": {
+                  bgcolor: theme.palette.primary.dark,
+                },
+              }}
+            >
+              <TabIcon />
+            </Button>
+          </Tooltip>
+        </ButtonGroup>
+      </Box>
+    </Stacked>
   );
 };
