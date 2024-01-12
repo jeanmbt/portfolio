@@ -44,7 +44,7 @@ export const ProjectCardImage = ({ image }: { image?: string }) => {
             width: '100%', // Ensure the text is centered
           }}
         >
-          Image not available for Private Projects
+          Image not available for privacy concerns
         </Typography>
       )}
     </Box>
