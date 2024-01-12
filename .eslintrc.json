@@ -4,6 +4,6 @@
       "plugin:@next/next/recommended"
     ],
   "rules": {
-    "@next/next/link-passhref": "off",
+    "@next/next/link-passhref": "off"
   }
 }
