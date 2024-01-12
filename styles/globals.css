@@ -85,11 +85,4 @@ html {
   background-color: transparent;
 }
 
-/* scrollbar miniaml if phone or tablet */
-@media (max-width: 700px) {
-  ::-webkit-scrollbar {
-    width: 7px;
-  }
-}
-
 
