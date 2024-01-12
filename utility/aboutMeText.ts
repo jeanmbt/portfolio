@@ -1,10 +1,12 @@
-export const aboutMeText = `Enthusiastic and resourceful web developer and multidisciplinary artist, interested in technology, the future, culture, behaviour and people. I embrace novelty with openess and I'm eager to stay out of the comfort zone by learning, with the goal of building, creating and sharing while diving deeper into programming and it's possibilities every day.
+export const aboutMeText = `Based in Berlin, I am a dynamic Web Developer with a penchant for engineering innovative and scalable web solutions. Since launching my tech journey in September 2021, I have been engrossed in an array of projects that have honed my problem-solving skills and code navigation capabilities.
 
-Previously working in the Fashion and Advertising industry, I decided it was time to move on and follow one of my other big interests: technology.
-After using a bunch of idle time I had available to study programming by myself and later attending a Development Bootcamp at LeWagon, I gathered knowledge on some of the most often used technologies on full-stack applications such as React, TypeScript, JavaScript and Rails. By comitting to follow commonly used methodologies and conventions I was able to build consistent projects either on my own or in teams.
+Proficient in React, TypeScript, JavaScript, Vue, and Flutter, my approach to full-stack development combines engineering principles with creativity. My background in Fashion & Advertising has imbued me with an eye for detail and out-of-the-box thinking in devising solutions.
 
-My approach working in teams is the same as my approach to people anywhere. For me it is important that the work enviroment is respectful, tolerant and open. I believe good communication is essential in such a place. 
+Accessibility and maintainability are cornerstones of my coding practice, as I strive to ensure that applications are user-friendly and sustainable. I consider myself an advocate for streamlined development processes and am experienced in employing various project management and version control tools to optimize workflows.
 
-Currently I am based in Berlin, Germany.
-Feel free to reach me if you're  interested in getting to know me better.
+Collaboration and open communication are paramount in my work ethic. My amiable and adaptable nature fosters a positive and productive team environment.
+
+Driven by an unrelenting curiosity, I stay abreast of the latest technological advancements. I find Artificial Intelligence particularly captivating, and am constantly exploring its transformative potential. A thirst to unravel the mechanics behind technologies acts as a catalyst in my professional endeavors.
+
+I am enthusiastic about connecting with like-minded professionals and collaborating on projects that push the boundaries of web development. Feel free to reach out for an engaging conversation.
 `

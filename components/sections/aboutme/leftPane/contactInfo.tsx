@@ -14,7 +14,7 @@ export const ContactInfo = () => {
       </Typography>
       <hr />
       <Box>
-        <Link href="mailto:jeanbattirola@gmail.com">
+        <Link href="mailto:dev@jeanbattirola.com">
           <a target="_blank">
             {/* TODO: Make copy to clipboard button */}
             <Typography
@@ -33,7 +33,7 @@ export const ContactInfo = () => {
       <Box>
         <Typography variant="subtitle2" marginTop={1}>
           <LocalPhoneIcon sx={{ fontSize: "1em" }} />
-              49 172 8353 516
+              49 1522 4945 601
         </Typography>
       </Box>
     </>
