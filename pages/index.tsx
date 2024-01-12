@@ -35,7 +35,7 @@ const Home: NextPage = () => {
 
       <StickyLinks />
 
-      <Container sx={{ marginTop: "-130px" }}>
+      <Container sx={{ marginTop: "-200px" }}>
         <Box
           sx={{
             margin: "auto",
