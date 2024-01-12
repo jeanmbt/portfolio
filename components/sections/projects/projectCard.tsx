@@ -100,6 +100,7 @@ export const ProjectCard = ({ project }: ProjectCard) => {
               target="_blank"
               href={`${project.url}`}
               variant="contained"
+              disabled={!project.url}
               sx={{
                 value: `Visit ${project.title}`,
                 ariaLabel: `Visit ${project.title} `,
