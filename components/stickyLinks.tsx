@@ -109,23 +109,21 @@ export const StickyLinks = () => {
       }}
     >
       {isSmallScreen ? (
-        <Tooltip title="Menu">
-          <IconButton onClick={handleMenuClick}>
-            <MenuIcon
-              sx={{
-                color: theme.palette.secondary,
-                fontSize: "2rem",
-                backgroundColor: theme.palette.primary,
-                borderRadius: "100%"
-              }}
-            />
-          </IconButton>
-        </Tooltip>
+        <IconButton onClick={handleMenuClick}>
+          <MenuIcon
+            sx={{
+              color: theme.palette.secondary,
+              fontSize: "2rem",
+              backgroundColor: theme.palette.primary,
+              borderRadius: "100%"
+            }}
+          />
+        </IconButton>
       ) : (
         <ButtonGroup orientation="vertical">
           {buttonData.map((button, index) => (
             button.condition === undefined || button.condition ? (
-              <Tooltip key={index} title={button.title}>
+              <Tooltip key={index} title={button.title} placement="right">
                 <Button
                   variant="contained"
                   href={button.href}
