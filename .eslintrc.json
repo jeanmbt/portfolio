@@ -1,4 +1,7 @@
 {
+  "plugins": [
+    "@next/next"
+  ],
   "extends": [
       "next/core-web-vitals",
       "plugin:@next/next/recommended"
