@@ -1,7 +1,7 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { theme } from "../../../styles/theme/theme";
-import { aboutMeText } from "../../../utility/aboutMeText";
+import { theme } from '../../../styles/theme/theme';
+import { aboutMeText } from '../../../utility/aboutMeText';
 
 export const Bio = () => {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));

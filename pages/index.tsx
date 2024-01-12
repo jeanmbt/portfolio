@@ -1,4 +1,4 @@
-import { Box, Button, Container, Paper, styled, Typography } from "@mui/material";
+import { Box, Container, styled, } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { AboutMe } from "../components/sections/aboutme";
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
     >
       <Head>
         <title>Jean Michel Battirola</title>
-        <meta name="description" content="Web Developer" />
+        <meta name="description" content="Jean Michel Battirola, Full Stack Software Enginner"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

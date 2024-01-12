@@ -9,10 +9,9 @@ export const ContactInfo = () => {
       <Typography variant="h6" sx={{ fontWeight: "bold" }}>
         Jean Michel Battirola
       </Typography>
-      <Typography variant="body1" sx={{ fontFamily: "Koulen ", letterSpacing: " 0.05em" }}>
-        Web developer
+      <Typography variant="body1" sx={{ fontFamily: "Koulen ", letterSpacing: " 0.05em", marginBottom: "1rem" }}>
+        Full Stack Software Engineer
       </Typography>
-      <hr />
       <Box>
         <Link href="mailto:jeanbattirola@gmail.com" passHref>
           <a target="_blank">
@@ -30,10 +29,13 @@ export const ContactInfo = () => {
           </a>
         </Link>
       </Box>
-      <Box>
+      <Box display={"flex"} flexDirection={"column"} alignItems={"center"} marginTop={1}>
         <Typography variant="subtitle2" marginTop={1}>
           <LocalPhoneIcon sx={{ fontSize: "1em" }} />
               49 172 8353 516
+        </Typography>
+        <Typography variant="subtitle2" marginTop={1}>
+          Berlin, Germany
         </Typography>
       </Box>
     </>
