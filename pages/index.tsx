@@ -12,7 +12,6 @@ export const Section = styled(Box)(({}) => ({
   marginBottom: "5em",
 }));
 
-// TODO: https://mui.com/material-ui/react-stack/
 export const Stacked = styled(Section)(({}) => ({
   flexDirection: "column",
   margin: 8,

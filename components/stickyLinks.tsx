@@ -65,7 +65,7 @@ export const StickyLinks = () => {
       title: "CV",
       icon: "CV",
       href: "/cv",
-      condition: router.route === "/",
+      condition: router.route !== "/cv",
       sx: {
         width: 0,
         value: `CV`,
@@ -86,7 +86,7 @@ export const StickyLinks = () => {
     },
   ];
 
-  const handleMenuClick = (event) => {
+  const handleMenuClick = (event: any) => {
     setAnchorEl(event.currentTarget);
     setMenuOpen(true);
   };
@@ -100,48 +100,58 @@ export const StickyLinks = () => {
     <Box
       marginY={2}
       padding={1}
-      sx={{ position: "sticky", right: "100%", top: "35%", paddingX: 1 }}
+      sx={{
+        position: isSmallScreen ? "fixed" : "sticky", 
+        right: isSmallScreen ? "0" : "100%", 
+        top: isSmallScreen ? "-3.5%" : "35%",
+        paddingX: 1,
+        zIndex: 1000,
+      }}
     >
-      {isSmallScreen 
-        ? (
-          <Tooltip title="Menu">
-            <IconButton onClick={handleMenuClick}>
-              <MenuIcon sx={{ 
+      {isSmallScreen ? (
+        <Tooltip title="Menu">
+          <IconButton onClick={handleMenuClick}>
+            <MenuIcon
+              sx={{
                 color: theme.palette.secondary,
                 fontSize: "2rem",
                 backgroundColor: theme.palette.primary,
                 borderRadius: "100%"
-              }} /> 
-            </IconButton>
-          </Tooltip> 
-        ) 
-        : (
-          <ButtonGroup orientation="vertical">
-            {buttonData.map((button, index) => (
-              button.condition === undefined || button.condition ? (
-                <Tooltip key={index} title={button.title}>
-                  <Button
-                    variant="contained"
-                    href={button.href}
-                    sx={button.sx}
-                  >
-                    {button.icon}
-                  </Button>
-                </Tooltip>
-              ) : null
-            ))}
-         </ButtonGroup>
-       )}
+              }}
+            />
+          </IconButton>
+        </Tooltip>
+      ) : (
+        <ButtonGroup orientation="vertical">
+          {buttonData.map((button, index) => (
+            button.condition === undefined || button.condition ? (
+              <Tooltip key={index} title={button.title}>
+                <Button
+                  variant="contained"
+                  href={button.href}
+                  sx={button.sx}
+                >
+                  {button.icon}
+                </Button>
+              </Tooltip>
+            ) : null
+          ))}
+        </ButtonGroup>
+      )}
 
       <Menu
         anchorEl={anchorEl}
         open={menuOpen}
         onClose={handleClose}
+        sx={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
       >
         {buttonData.map((button, index) => (
           button.condition === undefined || button.condition ? (
             <MenuItem key={index} onClick={handleClose}>
-              <a href={button.href} style={{ textDecoration: "none", color: "inherit" }}>
+              <a 
+                href={button.href} 
+                style={{ textDecoration: "none", color: "inherit", padding: "0.5em" }}
+              >
                 {button.title}
               </a>
             </MenuItem>
@@ -150,4 +160,5 @@ export const StickyLinks = () => {
       </Menu>
     </Box>
   );
+
 };
