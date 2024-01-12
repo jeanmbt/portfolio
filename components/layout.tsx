@@ -84,7 +84,7 @@ export default function Layout({ children, theme }: Layout) {
         }}
       >
         <Stacked sx={{ color: theme.palette.text.secondary }}>
-          <Link href="https://github.com/jeanmbt/portfolio">
+          <Link href="https://github.com/jeanmbt/portfolio" passHref>
             <a target="_blank">
               <Typography sx={{ textDecoration: "underline" }}>
                 check this project's repository!
