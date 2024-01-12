@@ -1,11 +1,5 @@
 {
-  "plugins": [
-    "@next/next"
-  ],
-  "extends": [
-      "next/core-web-vitals",
-      "plugin:@next/next/recommended"
-    ],
+  "extends": ["next", "next/core-web-vitals"],
   "rules": {
     "@next/next/link-passhref": "off",
   }

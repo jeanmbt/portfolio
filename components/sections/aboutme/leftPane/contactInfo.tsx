@@ -14,7 +14,7 @@ export const ContactInfo = () => {
       </Typography>
       <hr />
       <Box>
-        <Link href="mailto:jeanbattirola@gmail.com">
+        <Link href="mailto:jeanbattirola@gmail.com" passHref>
           <a target="_blank">
             {/* TODO: Make copy to clipboard button */}
             <Typography
