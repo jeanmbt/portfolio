@@ -73,12 +73,12 @@ export const ProjectCard = ({ project }: ProjectCard) => {
           </Typography>
         </Box>
         <ButtonGroup sx={{ display: "flex", justifyContent: "flex-end", margin: 3 }}>
-          {project.repoUrl && ( // Check if repoUrl exists
             <Tooltip title={`Visit ${project.title}'s GitHub repository`}>
               <Button
                 target="_blank"
                 href={`${project.repoUrl}`}
                 variant="outlined"
+                disabled={!project.repoUrl}
                 sx={{
                   value: `${project.title} GitHub Repository`,
                   ariaLabel: `${project.title} GitHub Repository`,
