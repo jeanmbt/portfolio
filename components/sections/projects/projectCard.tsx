@@ -94,7 +94,7 @@ export const ProjectCard = ({ project }: ProjectCard) => {
                 <GitHubIcon />
               </Button>
             </Tooltip>
-          )}
+          )
           <Tooltip title={`Visit ${project.title}`}>
             <Button
               target="_blank"
