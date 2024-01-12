@@ -1,12 +1,8 @@
-export const aboutMeText = `Based in Berlin, I am a dynamic Web Developer with a penchant for engineering innovative and scalable web solutions. Since launching my tech journey in September 2021, I have been engrossed in an array of projects that have honed my problem-solving skills and code navigation capabilities.
+export const aboutMeText = `Software Engineer with a special interest in Artificial Intelligence and a holistic approach, adept at balancing meticulous attention to detail with a overarching vision. 
 
-Proficient in React, TypeScript, JavaScript, Vue, and Flutter, my approach to full-stack development combines engineering principles with creativity. My background in Fashion & Advertising has imbued me with an eye for detail and out-of-the-box thinking in devising solutions.
+My expertise: high-quality, maintainable, and collaborative code using the technologies: Vue.js, Pinia, TypeScript, Python, Git, Docker, Quasar, HTML, SCSS and practices like continuous integration.
 
-Accessibility and maintainability are cornerstones of my coding practice, as I strive to ensure that applications are user-friendly and sustainable. I consider myself an advocate for streamlined development processes and am experienced in employing various project management and version control tools to optimize workflows.
+I excel at identifying issues ahead of time and offering innovative solutions that not only surprise with their effectiveness and simplicity, but also demonstrate lasting impact. 
 
-Collaboration and open communication are paramount in my work ethic. My amiable and adaptable nature fosters a positive and productive team environment.
-
-Driven by an unrelenting curiosity, I stay abreast of the latest technological advancements. I find Artificial Intelligence particularly captivating, and am constantly exploring its transformative potential. A thirst to unravel the mechanics behind technologies acts as a catalyst in my professional endeavors.
-
-I am enthusiastic about connecting with like-minded professionals and collaborating on projects that push the boundaries of web development. Feel free to reach out for an engaging conversation.
+With a background in the arts, my approach to technology is infused with innovation and originality. In team settings, my strengths are empathy and a collaborative spirit, coupled with adaptability to various team dynamics and honest communication.
 `

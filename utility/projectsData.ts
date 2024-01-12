@@ -20,7 +20,7 @@ export  const projectsData: Project[] = [
     description: "Conceptualized and implemented a internal AI-powered management and support tool. Developed the front-end, the machine learning models, and the back-end. Allows managing the company's projects, and to provide general information about them to the developers, performing RAG (Retrieval-Augmented Generation) on the Documents Base and Agents that fetch data from Sources like Jira. It also provides multiple chats with OpenAI's GPT4 and Assistants API.",
   },
   {
-    title: "SicherheitNord",
+    title: "Sicherheit-Nord",
     image: ``,
     techs: ["vue", "quasar", "typescript", "docker", "mysql"],
     description: "Collaboratively developed a comprehensive management tool tailored for a security company. The project encompassed front-end design, backend development, and database integration. This tool efficiently handles personal and event management, streamlining the company's operations.",

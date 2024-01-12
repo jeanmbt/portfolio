@@ -92,13 +92,13 @@ export default function Layout({ children, theme }: Layout) {
             </a>
           </Link>
           <hr />
-          <Typography>dev@jeanbattirola.com</Typography>
+          <Typography>jeanbattirola@gmail.com</Typography>
           <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <Typography
               variant="subtitle2"
               sx={{ fontFamily: "Koulen ", letterSpacing: "0.1em", fontSize: "1em" }}
             >
-              <LocalPhoneIcon sx={{ fontSize: "0.8em" }} /> +49 1522 4945 601
+              <LocalPhoneIcon sx={{ fontSize: "0.8em" }} /> +49 172 8353 516
             </Typography>
           </Box>
         </Stacked>

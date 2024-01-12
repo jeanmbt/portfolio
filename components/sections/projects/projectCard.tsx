@@ -11,9 +11,24 @@ interface ProjectCard {
 
 export const ProjectCard = ({ project }: ProjectCard) => {
   return (
-    <Stacked key={`${project.title}`} sx={{ margin: 10, width: 1, padding: 10 }}>
-      <ProjectCardImage image={project.image} />
-
+    <Stacked key={`${project.title}`} sx={{ margin: 1, width: 1, padding: 10 }}>
+      
+      { project.image 
+        ? <ProjectCardImage image={project.image} /> 
+        : <Toolbar>
+            <Typography
+              variant="h6"
+              marginBottom={1}
+              sx={{
+                fontFamily: "Koulen ",
+                letterSpacing: " 0.05em",
+              }}
+            >
+              Image not available for data protection reasons
+            </Typography>
+        </Toolbar>
+      }
+      
       <Box
         component={Paper}
         sx={{
@@ -58,26 +73,28 @@ export const ProjectCard = ({ project }: ProjectCard) => {
           </Typography>
         </Box>
         <ButtonGroup sx={{ display: "flex", justifyContent: "flex-end", margin: 3 }}>
-          <Tooltip title={`Visit ${project.title}'s GitHub repository`}>
-            <Button
-              target="_blank"
-              href={`${project.repoUrl}`}
-              variant="outlined"
-              sx={{
-                value: `${project.title} GitHub Repository`,
-                ariaLabel: `${project.title} GitHub Repository`,
-                color: theme.palette.secondary.main,
-                border: ` 1px solid ${theme.palette.secondary.main} !important`,
-                "&:hover": {
-                  border: `1px solid ${theme.palette.primary.main} !important`,
-                  color: theme.palette.text.secondary,
-                  bgcolor: theme.palette.primary.dark,
-                },
-              }}
-            >
-              <GitHubIcon />
-            </Button>
-          </Tooltip>
+          {project.repoUrl && ( // Check if repoUrl exists
+            <Tooltip title={`Visit ${project.title}'s GitHub repository`}>
+              <Button
+                target="_blank"
+                href={`${project.repoUrl}`}
+                variant="outlined"
+                sx={{
+                  value: `${project.title} GitHub Repository`,
+                  ariaLabel: `${project.title} GitHub Repository`,
+                  color: theme.palette.secondary.main,
+                  border: ` 1px solid ${theme.palette.secondary.main} !important`,
+                  "&:hover": {
+                    border: `1px solid ${theme.palette.primary.main} !important`,
+                    color: theme.palette.text.secondary,
+                    bgcolor: theme.palette.primary.dark,
+                  },
+                }}
+              >
+                <GitHubIcon />
+              </Button>
+            </Tooltip>
+          )}
           <Tooltip title={`Visit ${project.title}`}>
             <Button
               target="_blank"
