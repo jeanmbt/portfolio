@@ -4,5 +4,6 @@
       "plugin:@next/next/recommended"
     ],
   "rules": {
+    "@next/next/link-passhref": "warn"
   }
 }
