@@ -12,7 +12,6 @@ export const LeftPane = () => {
         width: "100%",
         alignItems: "center",
         flexDirection: "column",
-        marginTop: useMediaQuery(theme.breakpoints.down("sm")) ? 20 : 0,
         color: theme.palette.text.secondary,
       }}
     >
