@@ -1,33 +1,17 @@
 html {
   background-color: black;
   width: 100%;
+  height: 100%;
 }
 
 body {
   width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-@media (max-width: 700px) {
-  body, html {
-    width: 150%;
-  }
-}
-@media (max-width: 400px) {
-  body, html {
-    width: 160%;
-  }
-}
-@media (max-width: 300px) {
-  body, html {
-    width: 160%;
-  }
-}
-
-
-
 
 a {
   color: inherit;
@@ -36,4 +20,37 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Responsive Typography */
+html {
+  font-size: 100%; 
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 700px) {
+
+  body {
+    overflow-x: hidden; 
+  }
+
+  
+  .container {
+    padding: 10px; 
+  }
+
+  .header, .footer {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 200%; /* 12px */
+  }
 }

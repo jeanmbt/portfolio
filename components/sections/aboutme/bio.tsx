@@ -4,14 +4,12 @@ import { aboutMeText } from "../../../utility/aboutMeText";
 
 export const Bio = () => {
   return (
-    <>
-      {/* TODO: Make <Stacked/> */}
       <Box
         sx={{
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
-          width: "50%",
+          width: "100%",
           color: theme.palette.text.secondary,
         }}
       >
@@ -33,6 +31,5 @@ export const Bio = () => {
           </Typography>
         </Box>
       </Box>
-    </>
   );
 };

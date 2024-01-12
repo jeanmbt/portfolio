@@ -11,7 +11,6 @@ interface Layout {
   children: ReactNode;
 }
 
-// TODO: abstract to it's own file
 const Header = () => {
   return (
     <Toolbar
@@ -27,8 +26,6 @@ const Header = () => {
         zIndex: 3,
       }}
     >
-      {/* TODO: ADD switch from  https://mui.com/material-ui/react-switch/ to toggle themes*/}
-      {/* TODO: ADD languange options DE/EN/PT*/}
       <Box
         sx={{
           display: "flex",
@@ -47,24 +44,12 @@ const Header = () => {
         <Link href="/" passHref>
           JEAN MICHEL BATTIROLA
         </Link>
-        {/* 
-        TODO: Make a better under construction page
-        <Button
-          href="/art"
-          variant="text"
-          sx={{ color: theme.palette.text.secondary, fontFamily: "Koulen " }}
-        >
-          art?
-        </Button> */}
-        {/* // TODO: make responsive */}
       </Box>
     </Toolbar>
   );
 };
 
 export default function Layout({ children, theme }: Layout) {
-  // TODO: if theme... theme
-  // <Header theme={theme} />
   return (
     <>
       <Header />
