@@ -24,6 +24,7 @@ const Header = () => {
         justifyContent: "center",
         position: "sticky",
         top: "0%",
+        zIndex: 3,
       }}
     >
       {/* TODO: ADD switch from  https://mui.com/material-ui/react-switch/ to toggle themes*/}

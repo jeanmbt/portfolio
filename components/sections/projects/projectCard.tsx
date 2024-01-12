@@ -13,21 +13,7 @@ export const ProjectCard = ({ project }: ProjectCard) => {
   return (
     <Stacked key={`${project.title}`} sx={{ margin: 1, width: 1, padding: 10 }}>
       
-      { project.image 
-        ? <ProjectCardImage image={project.image} /> 
-        : <Toolbar>
-            <Typography
-              variant="h6"
-              marginBottom={1}
-              sx={{
-                fontFamily: "Koulen ",
-                letterSpacing: " 0.05em",
-              }}
-            >
-              Image not available for data protection reasons
-            </Typography>
-        </Toolbar>
-      }
+      <ProjectCardImage image={project.image} />
       
       <Box
         component={Paper}
