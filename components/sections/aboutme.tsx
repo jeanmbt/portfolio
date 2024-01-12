@@ -15,16 +15,12 @@ export const AboutMe = () => {
         <LeftPane />
       </Grid>
       
-      {!isSmallScreen && <Divider orientation="horizontal" />}
-      
       <Grid 
-        item 
-        xs={12} 
-        md={6} 
+        item xs={12} md={6} 
         sx={{
           marginTop: isSmallScreen 
-            ? 2 
-            : 0
+            ? 10
+            : 7
         }}
       >
         <Bio/>  

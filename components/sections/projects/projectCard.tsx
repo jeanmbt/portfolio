@@ -5,13 +5,21 @@ import { Project } from "../../../utility/projectsData";
 import { ProjectCardImage } from "./projectCardImage";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TabIcon from "@mui/icons-material/Tab";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 interface ProjectCard {
   project: Project;
 }
 
 export const ProjectCard = ({ project }: ProjectCard) => {
+
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
+
+  const tagsFontSize = isSmallScreen ? '0.7em' : '1em';
+
   return (
-    <Stacked key={`${project.title}`} sx={{ margin: 1, width: 1, padding: 10 }}>
+    <Stacked key={`${project.title}`} sx={{ margin: 1, width: 1}}>
       
       <ProjectCardImage image={project.image} />
       
@@ -35,7 +43,7 @@ export const ProjectCard = ({ project }: ProjectCard) => {
             return (
               <Typography
                 variant="body2"
-                sx={{ color: theme.palette.primary.dark, fontWeight: "bold" }}
+                sx={{ color: theme.palette.primary.dark, fontWeight: "bold", fontSize: tagsFontSize }}
                 key={`${tech}${project}`}
               >
                 {tech.toUpperCase()}

@@ -6,7 +6,7 @@ export const ProfilePicture = () => {
     <Box
       borderRadius={"100%"}
       margin="2em"
-      padding={10}
+      padding={15}
       width={"3em"}
       height={"3em"}
       sx={{
