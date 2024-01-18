@@ -11,7 +11,6 @@ export interface Project {
 }
 
 export  const projectsData: Project[] = [
-  //todo: add myway
   {
     title: "Bryan",
     image: `${bryan.src}`,
