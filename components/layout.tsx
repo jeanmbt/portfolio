@@ -70,14 +70,6 @@ export default function Layout({ children, theme }: Layout) {
         }}
       >
         <Stacked sx={{ color: theme.palette.text.secondary }}>
-          <Link href="https://github.com/jeanmbt/portfolio" passHref>
-            <a target="_blank">
-              <Typography sx={{ textDecoration: "underline" }}>
-                check this project's repository!
-              </Typography>
-            </a>
-          </Link>
-          <hr />
           <Typography>jeanbattirola@gmail.com</Typography>
           <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <Typography
