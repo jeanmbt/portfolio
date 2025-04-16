@@ -12,17 +12,17 @@ export interface Project {
 
 export  const projectsData: Project[] = [
   {
-    title: "Bryan",
+    title: "Bryan (Brayn.io sub-sector)",
     image: ``,
     techs: ["local LLMs", "python", "chromaDB", "MCP"],
-    description: "Founded the sub-sector 'Bryan' at Brayn.io, where I developed internal and external solutions using LLMs and other types of machine learning Models. This includes setting up, developoing and deploying RAG and agentic applications with autonomous behaviour using local LLMs and leveraging technologies like ChromaDB, MCP, Langgraph, Langchain, Microsoft Autogen, Panel and other state-of-the-art tools.",
+    description: "Founded 'Bryan' at Brayn.io, where I developed internal and external solutions using LLMs and other types of machine learning Models. This includes setting up, developing and deploying RAG and agentic applications with autonomous behaviour using local LLMs and leveraging technologies like ChromaDB, MCP, Langgraph, Langchain, Microsoft Autogen, Panel and other state-of-the-art tools, including observability, monitoring and CI/CD pipelines.",
   },
   {
     title: "Anita",
     image: ``,
     url: "https://www.anita.legal/",
     techs: ["ChromaDB", "Embeddings", "Langgraph"],
-    description: "Solved output quality issues by conceptualizing a system to match embeddings with the most relevant results.",
+    description: "Solved output quality issues by conceptualizing a system to match embeddings with the most relevant results, stopping LLM hallucination and ensuring accurate and reliable outputs even from large amounts of similar data. This system was then implemented in the backend of Anita, a legal assistant tool that provides users with accurate and relevant information.",
   },
   {
     title: "TimeIO",

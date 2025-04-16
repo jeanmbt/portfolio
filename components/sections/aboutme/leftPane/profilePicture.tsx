@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import profile from "../../../../public/profile.png";
+import profile from "../../../../public/old_profile.png";
 
 export const ProfilePicture = () => {
   return (
