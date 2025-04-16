@@ -13,9 +13,23 @@ export interface Project {
 export  const projectsData: Project[] = [
   {
     title: "Bryan",
-    image: `${bryan.src}`,
-    techs: ["langchain", "local LLMs", "python", "autogen",], 
-    description: "Conceptualized and implemented a internal AI-powered management and support tool for Brayn.io using cutting-edge technologies. Developed the front-end, the machine learning models back-end and API back-ends. Allows managing the company's projects, and to provide general information about them to the developers, performing RAG (Retrieval-Augmented Generation) and Advanced Function-Calling on the Documents Base and Agents that fetch data from Sources like Confluence, Jira and GitLab. It also provides multiple chats with OpenAI's GPT4 and Assistants API.",
+    image: ``,
+    techs: ["local LLMs", "python", "chromaDB", "MCP"],
+    description: "Founded the sub-sector 'Bryan' at Brayn.io, where I developed internal and external solutions using LLMs and other types of machine learning Models. This includes setting up, developoing and deploying RAG and agentic applications with autonomous behaviour using local LLMs and leveraging technologies like ChromaDB, MCP, Langgraph, Langchain, Microsoft Autogen, Panel and other state-of-the-art tools.",
+  },
+  {
+    title: "Anita",
+    image: ``,
+    url: "https://www.anita.legal/",
+    techs: ["ChromaDB", "Embeddings", "Langgraph"],
+    description: "Solved output quality issues by conceptualizing a system to match embeddings with the most relevant results.",
+  },
+  {
+    title: "TimeIO",
+    image: ``,
+    url: "",
+    techs: ["python", "fastAPI", "vue", "typescript", "postgresSQL"],
+    description: "Developed both the frontend and backend of a management tool for sensors and their data for Helmholtz-Centre for Environmental Research - UFZ, at Brayn.io. The project involved creating a user-friendly interface, ensuring seamless integration between the frontend and backend components. This tool enhances the efficiency of sensor management and data analysis.",
   },
   {
     title: "Sicherheit-Nord",
