@@ -23,7 +23,7 @@ export const ProjectCardImage = ({ image }: { image?: string }) => {
           style={{
             width: '100%',
             height: '100%',
-            objectFit: 'contain', // Makes sure the whole image is visible
+            objectFit: 'contain',
             position: 'absolute',
             top: '0',
             left: '0',
@@ -44,7 +44,7 @@ export const ProjectCardImage = ({ image }: { image?: string }) => {
             width: '100%', // Ensure the text is centered
           }}
         >
-          Image not available for privacy concerns
+          Image not available
         </Typography>
       )}
     </Box>
